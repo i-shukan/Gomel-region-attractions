@@ -81,6 +81,7 @@ body {
     z-index: 3;
     display: flex;
     text-align: center;
+    align-items: center;
     flex-direction: column;
 }
 .welcome-screen__title {
@@ -131,6 +132,11 @@ body {
         &:hover {
             border: #fff solid 1px;
         }
+    }
+}
+@media (max-width: 400px) {
+    .welcome-screen__content {
+        max-width: 300px;
     }
 }
 /*--------HEADER-----------------------------------------------------------*/
@@ -344,6 +350,7 @@ body {
 .infoblock {
     padding: torem(35) torem(50);
     display: flex;
+    justify-content: space-between;
     & > *:first-child {
         margin-right: 66px;
     }
@@ -436,9 +443,6 @@ body {
     }
 }
 @media (max-width: 425px) {
-    .about-gomel__container {
-        row-gap: 25px;
-    }
     .infoblock {
         flex-direction: column;
         .infoblock__title {

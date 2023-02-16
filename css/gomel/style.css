@@ -1,0 +1,599 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  width: 100%;
+  font-size: 100%;
+  line-height: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: Bebas Neue;
+  color: #212121;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+@media (max-width: 1440px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+@media (max-width: 940px) {
+  html, body {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  html, body {
+    font-size: 10px;
+  }
+}
+@media (max-width: 570px) {
+  html, body {
+    font-size: 8px;
+  }
+}
+@media (max-width: 375px) {
+  html, body {
+    font-size: 6px;
+  }
+}
+@media (max-width: 320px) {
+  html, body {
+    font-size: 5px;
+  }
+}
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+@font-face {
+  font-family: "Catallina";
+  font-style: normal;
+  src: url("../fonts/Catallina.otf") format("opentype");
+}
+@font-face {
+  font-family: "Catallina regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Catallina.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("Bebas Neue Regular"), local("BebasNeueRegular"), url("../fonts/bebasneueregular.woff2") format("woff2"), url("../fonts/bebasneueregular.woff") format("woff"), url("../fonts/bebasneueregular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("Bebas Neue Bold"), local("BebasNeueBold"), url("../fonts/bebasneuebold.woff2") format("woff2"), url("../fonts/bebasneuebold.woff") format("woff"), url("../fonts/bebasneuebold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Moniqa";
+  src: url("../fonts/CYR_CT_OP_Emberly Regular [wdth,wght]-VF.ttf") format("truetype");
+  font-style: normal;
+}
+@media (max-width: 375px) {
+  html, body {
+    font-size: 8px;
+  }
+}
+@media (max-width: 320px) {
+  html, body {
+    font-size: 8px;
+  }
+}
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100vh auto 1fr auto;
+  -ms-grid-columns: 1fr;
+      grid-template: 100vh auto 1fr auto/1fr;
+}
+
+.ibg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.ibg img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.ibg__color {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+._container {
+  max-width: 1360px;
+  margin: 0px 1.875rem;
+  padding: 0px 1.875rem;
+}
+
+/*------------BODY-------------------------------------------------------------------------*/
+.welcome-screen {
+  position: relative;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.header {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+}
+
+.footer {
+  background: #455A64;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*----------WELCOME-SCREEN-----------------------------------------------------------------*/
+.welcome-screen {
+  padding: 4.375rem 0px;
+}
+
+.welcome-screen__background-color {
+  z-index: 4;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(33, 33, 33, 0.87)), to(rgba(33, 33, 33, 0.87)));
+  background: linear-gradient(0deg, rgba(33, 33, 33, 0.87), rgba(33, 33, 33, 0.87));
+}
+
+.welcome-screen__background {
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  position: absolute;
+}
+
+.welcome-screen__container {
+  z-index: 4;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-column-gap: 25px;
+     -moz-column-gap: 25px;
+          column-gap: 25px;
+  -ms-grid-rows: auto 1fr;
+  -ms-grid-columns: 1fr 25px 1fr;
+      grid-template: auto 1fr/1fr 1fr;
+}
+
+.welcome-screen__title {
+  font-size: 3.125rem;
+  color: #fff;
+  line-height: 100%;
+  letter-spacing: 0.15em;
+}
+
+.welcome-screen__list li:not(:last-child) {
+  margin: 0px 0px 3.75rem 0px;
+}
+.welcome-screen__list li a {
+  position: relative;
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+  font-size: 1.875rem;
+  color: #fff;
+  line-height: 150%;
+  letter-spacing: 0.15em;
+}
+.welcome-screen__list li a:hover {
+  border-bottom: #fff 2px solid;
+}
+
+.welcome-screen__map {
+  height: 100%;
+  -ms-grid-row-span: 2;
+  grid-row: span 2;
+}
+
+@media (max-width: 768px) {
+  .welcome-screen__container {
+    -ms-grid-rows: auto 2.5rem 1fr 2.5rem auto;
+    -ms-grid-columns: 1fr;
+        grid-template: auto 1fr auto/1fr;
+    grid-auto-flow: row;
+    row-gap: 2.5rem;
+  }
+  .welcome-screen__list {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+  .welcome-screen__map {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .welcome-screen__list {
+    display: -ms-grid;
+    display: grid;
+    -webkit-column-gap: 1.5625rem;
+       -moz-column-gap: 1.5625rem;
+            column-gap: 1.5625rem;
+    row-gap: 0.9375rem;
+    -ms-grid-rows: 1fr 0.9375rem 1fr;
+    -ms-grid-columns: 1fr 1.5625rem 1fr;
+        grid-template: 1fr 1fr/1fr 1fr;
+  }
+  .welcome-screen__list li a {
+    line-height: 120%;
+    text-decoration: underline;
+  }
+  .welcome-screen__list li:not(:last-child) {
+    margin: 0px;
+  }
+}
+@media (max-width: 425px) {
+  .welcome-screen__list {
+    display: block;
+  }
+  .welcome-screen__list li:not(:last-child) {
+    margin: 0px 0px 1.5625rem 0px;
+  }
+}
+/*--------HEADER-----------------------------------------------------------*/
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50px;
+  padding: 10px 30px;
+  background: #607D8B;
+  z-index: 5;
+  position: relative;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__icon {
+  width: 30px;
+  height: 30px;
+}
+.header__icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header__title {
+  line-height: 120%;
+  margin: 0px 0px 0px 20px;
+  font-family: Catallina regular;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: white;
+  font-size: 0.9375rem;
+}
+
+.header__burger {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+}
+.header__burger span {
+  position: absolute;
+  width: 100%;
+  background: white;
+  height: 2px;
+  left: 0;
+  top: 9px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.header__burger::before, .header__burger::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: white;
+  height: 2px;
+  left: 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.header__burger::after {
+  bottom: 0;
+}
+.header__burger::before {
+  top: 0;
+}
+.header__burger.active span {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+}
+.header__burger.active::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  bottom: 9px;
+}
+.header__burger.active::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 9px;
+}
+
+.header__menu {
+  position: absolute;
+  z-index: 4;
+  right: 0;
+}
+
+.menu-header {
+  background: #455A64;
+  padding: 1.5625rem;
+  top: -550px;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+.menu-header.active {
+  top: 100%;
+}
+
+.menu-header__title {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 100%;
+  color: #FFFFFF;
+  letter-spacing: 0.15em;
+  margin: 0px 0px 1.5625rem 0px;
+}
+
+.menu-header__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 10px auto 10px auto 10px auto 10px auto;
+  -ms-grid-columns: auto 10px auto;
+      grid-template: repeat(5, auto)/repeat(2, auto);
+  gap: 10px;
+}
+
+.menu-header__item_big {
+  -ms-grid-column-span: 2;
+  grid-column-end: span 2;
+}
+
+.menu-item {
+  font-size: 1.125rem;
+  padding: 0.625rem;
+  border: rgba(255, 255, 255, 0) solid 2px;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+.menu-item:hover {
+  border: #ffffff solid 2px;
+}
+.menu-item:hover .menu-item__text {
+  text-decoration-color: #fff;
+}
+.menu-item:hover .menu-item__icon {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.menu-item a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.menu-item__icon {
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  display: inline-block;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.menu-item__icon img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.menu-item__text {
+  text-decoration: underline;
+  text-decoration-color: rgba(69, 90, 100, 0);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  text-transform: uppercase;
+  margin: 0px 0px 0px 1.25rem;
+  font-size: 0.7777777778em;
+  line-height: 150%;
+  color: #fff;
+  letter-spacing: 0.15em;
+}
+
+@media (max-width: 768px) {
+  .header__title {
+    font-size: 10px;
+  }
+  .menu-header__title {
+    font-size: 1.5rem;
+  }
+  .menu-item {
+    font-size: 1.5rem;
+  }
+  .header__container {
+    padding: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .menu-header {
+    width: 100%;
+  }
+  .menu-header__title {
+    font-size: 1.625rem;
+  }
+  .menu-item {
+    font-size: 1.75rem;
+  }
+}
+/*------------TEXTBLOCK-----------------------------------------------------------------------------------------------------------*/
+.textblock {
+  position: relative;
+  padding: 1.875rem 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.textblock__container {
+  position: relative;
+  margin: 0px 1.875rem;
+  padding: 1.875rem;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 2.5rem;
+  z-index: 4;
+}
+
+.textblock__container_white {
+  background: white;
+}
+
+.textblock__title {
+  font-family: "Bebas Neue";
+  font-size: 2.25rem;
+  line-height: 150%;
+  letter-spacing: 0.15em;
+  color: #000000;
+}
+
+.textblock__text {
+  font-family: "Golos";
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0.15em;
+  color: rgba(0, 0, 0, 0.74);
+}
+.textblock__text span {
+  font-weight: 600;
+}
