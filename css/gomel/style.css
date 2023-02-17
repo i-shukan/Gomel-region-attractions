@@ -106,29 +106,29 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Catallina";
   font-style: normal;
-  src: url("../fonts/Catallina.otf") format("opentype");
+  src: url("../../fonts/Catallina.otf") format("opentype");
 }
 @font-face {
   font-family: "Catallina regular";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Catallina.ttf") format("opentype");
+  src: url("../../fonts/Catallina.ttf") format("opentype");
 }
 @font-face {
   font-family: "Bebas Neue";
-  src: local("Bebas Neue Regular"), local("BebasNeueRegular"), url("../fonts/bebasneueregular.woff2") format("woff2"), url("../fonts/bebasneueregular.woff") format("woff"), url("../fonts/bebasneueregular.ttf") format("truetype");
+  src: local("Bebas Neue Regular"), local("BebasNeueRegular"), url("../../fonts/bebasneueregular.woff2") format("woff2"), url("../../fonts/bebasneueregular.woff") format("woff"), url("../../fonts/bebasneueregular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Bebas Neue";
-  src: local("Bebas Neue Bold"), local("BebasNeueBold"), url("../fonts/bebasneuebold.woff2") format("woff2"), url("../fonts/bebasneuebold.woff") format("woff"), url("../fonts/bebasneuebold.ttf") format("truetype");
+  src: local("Bebas Neue Bold"), local("BebasNeueBold"), url("../../fonts/bebasneuebold.woff2") format("woff2"), url("../../fonts/bebasneuebold.woff") format("woff"), url("../../fonts/bebasneuebold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Moniqa";
-  src: url("../fonts/CYR_CT_OP_Emberly Regular [wdth,wght]-VF.ttf") format("truetype");
+  src: url("../../fonts/CYR_CT_OP_Emberly Regular [wdth,wght]-VF.ttf") format("truetype");
   font-style: normal;
 }
 @media (max-width: 375px) {
