@@ -7,8 +7,10 @@ menu.onclick = function() {
     }
 }
 
-let banner = document.querySelector('.map__banner');
+let banners = document.querySelectorAll('.map__banner');
 
-banner.onclick = function() {
-    banner.classList.toggle('active')
+for(let banner of banners) {
+    banner.onclick = function() {
+        banner.classList.toggle('active')
+    }
 }
