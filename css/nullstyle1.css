@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  width: 100%;
+  font-size: 100%;
+  line-height: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: Bebas Neue;
+  color: #212121;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+@media (max-width: 1440px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+@media (max-width: 940px) {
+  html, body {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  html, body {
+    font-size: 10px;
+  }
+}
+@media (max-width: 570px) {
+  html, body {
+    font-size: 8px;
+  }
+}
+@media (max-width: 375px) {
+  html, body {
+    font-size: 6px;
+  }
+}
+@media (max-width: 320px) {
+  html, body {
+    font-size: 5px;
+  }
+}
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+@font-face {
+  font-family: "Catallina";
+  font-style: normal;
+  src: url("../../fonts/Catallina.otf") format("opentype");
+}
+@font-face {
+  font-family: "Catallina regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/Catallina.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("Bebas Neue Regular"), local("BebasNeueRegular"), url("../../fonts/bebasneueregular.woff2") format("woff2"), url("../../fonts/bebasneueregular.woff") format("woff"), url("../../fonts/bebasneueregular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("Bebas Neue Bold"), local("BebasNeueBold"), url("../../fonts/bebasneuebold.woff2") format("woff2"), url("../../fonts/bebasneuebold.woff") format("woff"), url("../../fonts/bebasneuebold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Moniqa";
+  src: url("../../fonts/CYR_CT_OP_Emberly Regular [wdth,wght]-VF.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Golos";
+  font-weight: 400;
+  src: url("../../fonts/golos-text-regular.woff2") format("woff2"), url("../../fonts/golos-text-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Golos";
+  font-weight: 600;
+  src: url("../../fonts/golos-text-demibold.woff2") format("woff2"), url("../../fonts/golos-text-demibold.woff") format("woff");
+}
+/*--------------FOOTER-------------------------------------------------------------------------------------------------------------*/
+.footer {
+  background: #455A64;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__container {
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  font-size: inherit;
+}
+
+.footer__copyright {
+  font-family: "Inter";
+  line-height: 150%;
+  font-size: 0.75em;
+  letter-spacing: 0.17em;
+  color: #FFFFFF;
+}
+.footer__copyright br {
+  display: none;
+}
+.footer__copyright span {
+  color: #FFC107;
+  font-weight: 700;
+}
+.footer__copyright span.copyright__line {
+  color: #FFFFFF;
+}
+
+.footer__media {
+  position: relative;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+.footer__media img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (max-width: 425px) {
+  .footer__copyright {
+    font-size: 1em;
+  }
+  .footer__copyright br {
+    display: inline;
+  }
+  .footer__copyright .copyright__line {
+    display: none;
+  }
+}
