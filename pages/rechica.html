@@ -4,11 +4,425 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:normal,500,700" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/longread.css">
+    <link rel="stylesheet" href="../photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" href="../css/rechica.css">
     <link rel="icon" href="../img/герб.ico">
     <title>Золотое кольцо Гомельщины</title>
 </head>
 <body>
-    
+    <section class="welcome-screen">
+        <div class="welcome-screen__container _container">
+            <h1 class="welcome-screen__title">РЕЧИЦА</h1>
+            <ol class="welcome-screen__list list-welcomescreen">
+                <li class="list-welcomescreen__item"><a href="#origin-of-name">происхождение названия</a></li>
+                <li class="list-welcomescreen__item"><a href="#history-of-city">история города</a></li>
+                <li class="list-welcomescreen__item"><a href="#chapel">Часовня Святой Евфросинии Полоцкой</a></li>
+                <li class="list-welcomescreen__item"><a href="#post-and-telegraph-office">Бывшая почтово-телеграфная контора</a></li>
+                <li class="list-welcomescreen__item"><a href="#settlement-rechica">Городище Речица</a></li>
+                <li class="list-welcomescreen__item"><a href="#cathedral">Свято-Успенский собор</a></li>
+                <li class="list-welcomescreen__item"><a href="#church">Свято-Троицкий костел</a></li>
+            </ol>
+            <div class="welcome-screen__map map">
+                <div class="map__banner">
+                    <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                </div>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3341f176a8abe4ff3a3e7281418d13971386697610f8d24c2f18984c4f73d781&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+        <div class="welcome-screen__background ibg">
+            <div class="welcome-screen__background-color ibg__color"></div>
+            <img src="../img/rechica/01.jpg" alt="background">
+        </div>
+    </section>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__wrapper">
+                <div class="header__icon">
+                    <img src="../img/header/герб.png" alt="icon">
+                </div>
+                <a class="header__title" href="../index.html">Золотое кольцо Гомельщины</a>
+            </div>
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </div>
+        <div class="header__menu menu-header">
+            <h5 class="menu-header__title">населённые пункты:</h5>
+            <ul class="menu-header__list">
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/gomel.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/Гомель.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">гомель</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/rechica.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/речица.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">речица</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/mozir.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/мозырь.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">мозырь</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/turow.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/туров.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">туров</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/vetka.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/ветка.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">ветка</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/loev.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/лоев.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">лоев</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/chechersk.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/чечерск.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">чечерск</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/kb.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/красный берег.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">КРАСНЫЙ БЕРЕГ<br>(ЖЛОБИНСКИЙ Р-Н)</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-header__item_big menu-item">
+                    <a href="../pages/yrovichi.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/юровичи.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">ЮРОВИЧИ<br>(КАЛИНКОВИЧСКИЙ Р-Н)</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-header__item_big menu-item">
+                    <a href="../index.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/home-page.png" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">на главную</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main__textblock textblock" id="origin-of-name">
+            <div class="textblock__container _container">
+                <h2 class="textblock__title">происхождение названия</h2>
+                <div class="textblock__text">
+                    <span>Согласно распространенному мнению, топоним «Речица» возник от одноименной реки. В свою очередь река получила название от славянского слова «река».</span>
+                </div>
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="history-of-city">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">история города</h2>
+                <div class="textblock__text">
+                    <span>Первое упоминание о городе относится к 1214 году как о поселении в месте впадения реки Речица в Днепр.</span> С 11 по 13 столетия Речица находилась под влиянием киевских и черниговских князей. Затем перешла под власть ВКЛ и в конце 14 столетия обзавелась укрепленным деревянным замком, впоследствии сожженным при казацких набегах. В 1511 году Речица одним из первых городов Беларуси получила Магдебургское право с утвержденным гербом. Толчок развитию города дала добыча нефти. Первые тонны «черного золота» были добыты в 1964 году, и промышленная добыча ведется до сих пор, что сделало город важным промышленным центром страны.
+                </div>
+            </div>
+            <div class="welcome-screen__background ibg">
+                <div class="welcome-screen__background-color ibg__color"></div>
+                <img src="../img/rechica/textblock-background.jpg" alt="background">
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="chapel">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">Часовня Святой Евфросинии Полоцкой</h2>
+                <div class="textblock__content">
+                    <div class="textblock__gallery pswp-gallery" id="my-gallery">
+                        <a
+                            href="../img/rechica/gallery(chapel)/01.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="887"
+                            target="_blank"
+                        >
+                            <img title="галерея(нажмите для просмотра)" src="../img/rechica/gallery(chapel)/01.jpg" alt=""/>
+                        </a>
+                        <a
+                            href="../img/rechica/gallery(chapel)/02.jpg"
+                            data-pswp-width="817"
+                            data-pswp-height="1090"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/rechica/gallery(chapel)/03.jpg"
+                            data-pswp-width="1065"
+                            data-pswp-height="814"
+                            target="_blank"
+                        >
+                        </a>
+                    </div>
+                    <div class="textblock__map map">
+                        <div class="map__banner">
+                            <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                        </div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A45a00c7b22f96762ccde5cebbaaa4e928326e8421520f886bb6839beb315032c&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="textblock__text">
+                    Мимо часовни Святой Евфросинии Полоцкой, что построена в 1995 году на высоком берегу Днепра в Речице, пройти невозможно.
+                    Эта часовня, а на белорусском Капліца Святой Еўфрасінні Полацкай, просто зачаровывает и является одной из главных достопримечательностей города.
+                    Вначале автор назвал свой монумент — Юбилейная часовня.
+                    Но горожане быстро переименовали его на свой лад и стали называть — часовня Евфросинии Полоцкой.
+                    Это не простое место. Оно историческое и часовня здесь построена не зря.
+                </div>
+                <div class="textblock__text">
+                    Оказывается, именно в этом месте, в далеком 1910 году остановилась эскадра пароходов, которая везла мощи преподобной Евфросинии Полоцкой из Киева в Полоцк. Там был установлен деревянный крест, на месте которого в недалеком прошлом и построили часовню.
+                </div>
+                <div class="textblock__text">
+                    После первого раздела Речи Посполитой город стал частью Российской империи. Для Гомеля начинается новый виток истории, когда императрица Екатерина II дарит его русскому полководцу Петру Александровичу Румянцеву-Задунайскому. Он начинает реконструкцию города, на месте старой крепости строит дворец. Его дело продолжает сын - канцлер Российской империи Николай Петрович Румянцев. Именно с этим именем связан подъем Гомеля, его второе рождение. Граф Румянцев 25 лет строил город своей мечты. Гомель не зря называют последним в истории городом, построенным частным владельцем на собственные деньги. Граф старался привить здесь все самое лучшее, что он видел в европейских городах во время своей дипломатической службы. В своих записях Николай Петрович называет город «мой любимый Гомель».
+                </div>
+                <div class="textblock__text">
+                    <span>Высота часовни — 24 метра 24 сантиметра.</span> Выполнена она из нержавеющей стали и латуни.
+                    В основу композиции архитектора Агуновича Эдуарда Константиновича заложена следующая идея: <span>четыре опоры ступенчато символизируют развитие жизни и мысли по спирали.</span> В них по возрастающей вписаны лики 12-ти белорусских святых и просветителей.
+                    Четверо из них — Епископ Полоцкий Мина, Епископ Полоцкий Дианисий, Кирилл Туровский и Елисей Лавришенский канонизированы как православной, так и католической церквями. в числе просветителей такие яркие личности, как Симон Будный, Василий Тяпинский, Симеон Полоцкий, Лев Сапега, Гавриил Белостокский, и конечно же Франциск Скорина и уроженец Беларуси первопечатник Иван Федоров. Венчает композицию ореол души Св. Е. Полоцкой, держащей крест, направленный к Богу. В центре часовни между опорами установлен крест из мореного дуба.
+                </div>
+                <div class="textblock__text">
+                    Эта композиция хорошо видна с разных точек города и находится на пересечении Набережной улицы с улицей Чапаева. Там большой сквер, скамейки. Летом много цветов. Место очень красивое.
+                </div>
+                <div class="textblock__text">
+                    <span>Строительство было приурочено к нескольким важнейшим историческим датам.</span> Тут и 1000-летие Крещения Руси, и 50-летие Победы в Великой Отечественной войне, подвигу воинов-интернационалистов и жертвам Чернобыльской катастрофы.
+                    Открытие часовни состоялось 2 сентября 1995 г.
+                </div>
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="post-and-telegraph-office">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">Бывшая почтово-телеграфная контора</h2>
+                <div class="textblock__content">
+                    <div class="textblock__gallery pswp-gallery" id="my-gallery">
+                        <a
+                            href="../img/rechica/gallery(post-and-telegraph-office)/01.jpg"
+                            data-pswp-width="1200"
+                            data-pswp-height="800"
+                            target="_blank"
+                        >
+                            <img title="галерея(нажмите для просмотра)" src="../img/rechica/gallery(post-and-telegraph-office)/01.jpg" alt=""/>
+                        </a>
+                        <a
+                            href="../img/rechica/gallery(post-and-telegraph-office)/02.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="747"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/rechica/gallery(post-and-telegraph-office)/03.jpg"
+                            data-pswp-width="1497"
+                            data-pswp-height="953"
+                            target="_blank"
+                        >
+                        </a>
+                    </div>
+                    <div class="textblock__map map">
+                        <div class="map__banner">
+                            <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                        </div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acbb5f47aa80e7552eb1bd6cd8a7d62f44ab1cef6f12a9dcd7059eb3f563e58ad&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="textblock__text">
+                    <span>Двухэтажное, Г-образное в плане здание с пластично решёнными фасадами сооружено в конце XIX — начале XX века как частный дом, который городская управа арендовала у владельца Августа Крегера под почтово-телеграфную контору.</span> В пристройке к дому в начале 1912 года был открыт первый в Речице электротеатр «Модерн». В 1919 году здесь размещался Речицкий революционный комитет, возглавляемый Е. П. Мицкевичем. Впоследствии тут находилась детская музыкальная школа.
+                </div>
+                <div class="textblock__text">
+                    Пологая крыша по периметру ограждена несложной решеткой между невысокими кирпичными столбиками. К торцу основного фасада по ул. Советской примыкает пристройка с повторяющимися архитектурными деталями в отделке фасадов.
+                    <span>Сегодня в этом здании находится районный отдел культуры и эколого-культурный центр.</span>
+                </div>
+            </div>
+            <div class="welcome-screen__background ibg">
+                <div class="welcome-screen__background-color ibg__color"></div>
+                <img src="../img/rechica/textblock-background1.jpg" alt="background">
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="settlement-rechica">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">Городище Речица</h2>
+                <div class="textblock__content">
+                    <div class="textblock__gallery pswp-gallery" id="my-gallery">
+                        <a
+                            href="../img/rechica/gallery(settlement-rechica)/01.jpg"
+                            data-pswp-width="1188"
+                            data-pswp-height="622"
+                            target="_blank"
+                        >
+                            <img title="галерея(нажмите для просмотра)" src="../img/rechica/gallery(settlement-rechica)/01.jpg" alt=""/>
+                        </a>
+                        <a
+                            href="../img/rechica/gallery(settlement-rechica)/02.jpg"
+                            data-pswp-width="784"
+                            data-pswp-height="588"
+                            target="_blank"
+                        >
+                        </a>
+                    </div>
+                    <div class="textblock__map map">
+                        <div class="map__banner">
+                            <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                        </div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acbb5f47aa80e7552eb1bd6cd8a7d62f44ab1cef6f12a9dcd7059eb3f563e58ad&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="textblock__text">
+                    Отмечено памятным знаком «Памятник археологии». Городище относится к эпохе Киевской Руси. <span>В XIII столетии тут был детинец города, позже князь Витовт возвел деревянный замок, простоявший более двухсот лет.</span> Там выявлен культурный пласт толщиной в 1,6 метра, найдена керамика XIII—XIV столетий, куски лепной посуды.
+                    Это прямоугольная площадка размером 75×45 м, с западной, восточной и южной сторон укрепленная валами двухметровой высоты. С севера городище омывается рекой. С его западной и восточной сторон — глубокие рвы, в древности заполнявшиеся водой.
+                </div>
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="cathedral">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">Свято-Успенский собор</h2>
+                <div class="textblock__content">
+                    <div class="textblock__gallery pswp-gallery" id="my-gallery">
+                        <a
+                            href="../img/rechica/gallery(cathedral)/01.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="747"
+                            target="_blank"
+                        >
+                            <img title="галерея(нажмите для просмотра)" src="../img/rechica/gallery(cathedral)/01.jpg" alt=""/>
+                        </a>
+                        <a
+                            href="../img/rechica/gallery(cathedral)/02.jpg"
+                            data-pswp-width="2560"
+                            data-pswp-height="1707"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/rechica/gallery(cathedral)/03.jpg"
+                            data-pswp-width="1528"
+                            data-pswp-height="855"
+                            target="_blank"
+                        >
+                        </a>
+                    </div>
+                    <div class="textblock__map map">
+                        <div class="map__banner">
+                            <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                        </div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acbb5f47aa80e7552eb1bd6cd8a7d62f44ab1cef6f12a9dcd7059eb3f563e58ad&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="textblock__text">
+                    История церквей и костелов Беларуси схожа – все они знали разные времена. Их закрывали, превращали в клубы и бары, оскверняли, но они потом снова возрождались, на радость верующим. Свято-Успенский собор в Речице тоже не избежал такой судьбы, но смог выстоять и до сих пор несет свет и веру в души прихожан.
+                </div>
+                <div class="textblock__text">
+                    Строительство этого собора началось в 1841 году. Правда, через три года недостроенное здание разрушилось. Целых двадцать лет храм был в таком виде. И только в 1864 году строительство снова возобновилось – благодаря деньгам одного минского купца. Но и тут собору не повезло: через два года купец разорился, а строительство снова прекратилось. Жители города вынуждены были просить помощи у минского губернатора Токарева, который выделил деньги на многострадальный храм. В 1872 году он был достроен и освящен.
+                </div>
+                <div class="textblock__text">
+                    <span>Годы советской власти ничего хорошего собору не принесли. В 1934 году его закрыли, а еще через несколько лет превратили в «Дом социалистической культуры».</span> Собор остался без куполов, его интерьер был полностью изменен, к храму пристроили деревянное здание. В 60-е годы помещение и вовсе стало бесхозным. Только в самом конце XX века - в 1999 году - собор вернули верующим. В этом же году прошло первое богослужение.
+                </div>
+                <div class="textblock__text">
+                    <span>Сейчас Свято-Успенский собор - украшение города, храму присвоен статут историко-культурной ценности Беларуси.</span> Это уже целый комплекс: рядом с основным зданием расположились церковная лавка и административно-хозяйственный блок, построена часовня для освящения воды. Эту часовню возвели в 2008 году на деньги прихожан. Административно-хозяйственный блок стал местом расположения воскресной школы, помещения для крещения, просфорни, а также рабочего кабинета настоятеля собора.
+                </div>
+                <div class="textblock__text">
+                    Свято-Успенский собор по праву гордится своим иконостасом. Он пятиярусный, включает двадцать четыре иконы. В 2011 году в храме появились два киота в честь святого Николая и Казанской Божьей Матери, а недавно в собор привезли иконы Блаженных Ксении Петербургской и Матроны Московской. За помощью можно обратиться и к своим – белорусским – святым: Евфросинье Полоцкой, Манефе Гомельской, Жировицкой Божией Матери, к святому праведному Иоанну Кормянскому.
+                </div>
+            </div>
+            <div class="welcome-screen__background ibg">
+                <div class="welcome-screen__background-color ibg__color"></div>
+                <img src="../img/rechica/textblock-background.jpg" alt="background">
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="church">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">Свято-Троицкий костел</h2>
+                <div class="textblock__content">
+                    <div class="textblock__gallery pswp-gallery" id="my-gallery">
+                        <a
+                            href="../img/rechica/gallery(church)/01.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="887"
+                            target="_blank"
+                        >
+                            <img title="галерея(нажмите для просмотра)" src="../img/rechica/gallery(church)/01.jpg" alt=""/>
+                        </a>
+                        <a
+                            href="../img/rechica/gallery(church)/02.jpg"
+                            data-pswp-width="1280"
+                            data-pswp-height="1737"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/rechica/gallery(church)/03.jpg"
+                            data-pswp-width="1279"
+                            data-pswp-height="852"
+                            target="_blank"
+                        >
+                        </a>
+                    </div>
+                    <div class="textblock__map map">
+                        <div class="map__banner">
+                            <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                        </div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acbb5f47aa80e7552eb1bd6cd8a7d62f44ab1cef6f12a9dcd7059eb3f563e58ad&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="textblock__text">
+                    <span>Свято-Троицкий костел в Речице — яркий пример неоготической архитектуры начала XX века, один из наиболее выразительных памятников этого стиля в Беларуси. Костел был построен в 1903 году.</span>
+                </div>
+                <div class="textblock__text">
+                    Впервые католический храм в Речице появился еще в 1634 году. Костел украшал город до 1756 года, когда построили новый деревянный Свято-Троицкий костел и монастырь при нем. В начале XIX века здесь жили около двадцати монахов. Обитель просуществовала до 1831 года, когда по всей Беларуси закрывались католические монастыри и храмы. Бездействующий костел стал потихоньку ветшать. Новый храм в Речице был построен в 1903 году.
+                </div>
+                <div class="textblock__text">
+                    <span>В годы советской власти здание храма использовалось в качестве склада, электростанции и даже пивной. Потом здесь был витаминный бар.</span> В 1998 году Свято-Троицкий костел признали памятником архитектуры XX века и включили в Государственный список историко-культурных ценностей, а через год вернули прихожанам. Здание было реконструировано, и с 2007 года костел является действующим.
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container _container">
+            <div class="footer__copyright">Copyright ©2023 All rights reserved <span class="copyright__line">|</span><br> This site is made by <span>Shukan Ivan</span></div>
+            <div class="footer__media">
+                <a href="https://github.com/i-shukan" target="_blank">
+                    <img src="../img/footer/icons/github.svg" alt="github">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script type="module">
+        import PhotoSwipeLightbox from '../photoswipe/dist/photoswipe-lightbox.esm.js';
+        const lightbox = new PhotoSwipeLightbox({
+          gallery: '#my-gallery',
+          children: 'a',
+          showHideAnimationType: 'zoom',
+          wheelToZoom: true,
+          pswpModule: () => import('../photoswipe/dist/photoswipe.esm.js')
+        });
+        lightbox.init();
+    </script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

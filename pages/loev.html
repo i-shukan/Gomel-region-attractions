@@ -4,11 +4,289 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:normal,500,700" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/longread.css">
+    <link rel="stylesheet" href="../photoswipe/dist/photoswipe.css">
     <link rel="icon" href="../img/герб.ico">
     <title>Золотое кольцо Гомельщины</title>
 </head>
 <body>
-    
+    <section class="welcome-screen">
+        <div class="welcome-screen__container _container">
+            <h1 class="welcome-screen__title">ЛОЕВ</h1>
+            <ol class="welcome-screen__list list-welcomescreen">
+                <li class="list-welcomescreen__item"><a href="#origin-of-name">происхождение названия</a></li>
+                <li class="list-welcomescreen__item"><a href="#history-of-city">история города</a></li>
+                <li class="list-welcomescreen__item"><a href="#museum">Лоевский музей «Битвы за Днепр»</a></li>
+                <li class="list-welcomescreen__item"><a href="#house-of-merchant">Дом купца Наума Долгина</a></li>
+            </ol>
+            <div class="welcome-screen__map map">
+                <div class="map__banner">
+                    <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                </div>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3341f176a8abe4ff3a3e7281418d13971386697610f8d24c2f18984c4f73d781&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+        <div class="welcome-screen__background ibg">
+            <div class="welcome-screen__background-color ibg__color"></div>
+            <img src="../img/loev/01.jpg" alt="background">
+        </div>
+    </section>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__wrapper">
+                <div class="header__icon">
+                    <img src="../img/header/герб.png" alt="icon">
+                </div>
+                <a class="header__title" href="../index.html">Золотое кольцо Гомельщины</a>
+            </div>
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </div>
+        <div class="header__menu menu-header">
+            <h5 class="menu-header__title">населённые пункты:</h5>
+            <ul class="menu-header__list">
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/gomel.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/Гомель.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">гомель</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/rechica.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/речица.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">речица</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/mozir.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/мозырь.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">мозырь</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/turow.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/туров.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">туров</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/vetka.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/ветка.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">ветка</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/loev.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/лоев.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">лоев</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/chechersk.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/чечерск.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">чечерск</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/kb.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/красный берег.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">КРАСНЫЙ БЕРЕГ<br>(ЖЛОБИНСКИЙ Р-Н)</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-header__item_big menu-item">
+                    <a href="../pages/yrovichi.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/юровичи.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">ЮРОВИЧИ<br>(КАЛИНКОВИЧСКИЙ Р-Н)</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-header__item_big menu-item">
+                    <a href="../index.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/home-page.png" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">на главную</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main__textblock textblock" id="origin-of-name">
+            <div class="textblock__container _container">
+                <h2 class="textblock__title">происхождение названия</h2>
+                <div class="textblock__text">
+                    <span>Топоним «Лоев» произошел от личного имени «Лой», первоначальный смысл которого — толстый, полный, грузный.</span> Некоторые специалисты считают, что название связано с понятием «лонва» — большая многоместная лодка. Лоев находится на важных торговых путях, поэтому весьма вероятно, что поселок мог возникнуть при лонве, которая стояла у берега и играла роль пристани.
+                </div>
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="history-of-city">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">история города</h2>
+                <div class="textblock__text">
+                    Согласно археологическим сведениям, в X—XI вв. на Замковой горе существовало древнее поселение дреговичей, которое входило в состав Черниговского княжества. В XIV ст. Лоев присоединился к Великому княжеству Литовскому. В это время на правом берегу Днепра построили замок, а вокруг него — поселение.
+                </div>
+                <div class="textblock__text">
+                    <span>Первое известие о Лоеве появилось в 1505 году и селение называлось тогда Лоева Гора.</span> Лоев разрастался вокруг построенного замка. Поселение не раз становилось ареной битв между ВКЛ и украинскими казаками, войсками Речи Посполитой и России. Особенно сильно Лоев пострадал в середине 17 столетия, когда во время военных действий был полностью опустошен. С конца 18 века принадлежал Российской империи и был центром волости Речицкого повета Минской губернии. С 1919 г. — в составе Минской области БССР, а позже — Гомельской области РСФСР. В мае-июне 1920 г. Лоев был оккупирован польскими войсками. С 1926 г. Лоев снова вошел в состав БССР, став центром района. С 1938 г. имеет статус городского поселка. Недолго, с 1962 по 1966 гг., был частью Речицкого района, после чего вновь стал райцентром.
+                </div>
+            </div>
+            <div class="welcome-screen__background ibg">
+                <div class="welcome-screen__background-color ibg__color"></div>
+                <img src="../img/loev/textblock-background.jpg" alt="background">
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="museum">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">Лоевский музей «Битвы за Днепр»</h2>
+                <div class="textblock__content">
+                    <div class="textblock__gallery pswp-gallery" id="my-gallery">
+                        <a
+                            href="../img/loev/gallery(museum of the battle of the dnieper)/01.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="883"
+                            target="_blank"
+                        >
+                            <img title="галерея(нажмите для просмотра)" src="../img/loev/gallery(museum of the battle of the dnieper)/01.jpg" alt=""/>
+                        </a>
+                        <a
+                            href="../img/loev/gallery(museum of the battle of the dnieper)/02.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="883"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/loev/gallery(museum of the battle of the dnieper)/03.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="883"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/loev/gallery(museum of the battle of the dnieper)/04.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="887"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/loev/gallery(museum of the battle of the dnieper)/05.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="887"
+                            target="_blank"
+                        >
+                        </a>
+                    </div>
+                    <div class="textblock__map map">
+                        <div class="map__banner">
+                            <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                        </div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A45a00c7b22f96762ccde5cebbaaa4e928326e8421520f886bb6839beb315032c&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="textblock__text">
+                    <span>Лоевский музей «Битвы за Днепр» открылся посетителям в 1985 году.</span> Он стал очередным филиалом Белорусского государственного музея истории Великой Отечественной войны.
+                </div>
+                <div class="textblock__text"> 
+                    <span>На сегодня фонд музея составляет более 4 000 экспонатов. Все выставочные единицы объединены одной темой - борьба с немецко-фашистскими захватчиками на белорусской земле.</span> В музее часто проводят встречи с ветеранами, устраивают концерты и тематические вечера, военно-исторические конференции и акции, а также дни памяти.
+                    Основная экспозиция музея рассказывает о форсировании реки Днепр солдатами Центрального фронта под командованием К.К. Рокоссовского. Точно и подробно освящены боевые действия 61 и 65 армий, происходившие на Лоевском плацдарме. Также посетители узнают, как был освобождён район и о деятельности партизанского движения на Лоевщине.
+                </div>
+                <div class="textblock__text">
+                    Среди экспонатов много документальных сведений о земляках-солдатах, представлены подручные средства переправы, воинское снаряжение и даже частные коллекции оружия. Особый интерес представляют боевые награды и личные фотографии фронтовиков, а также партизанский дневник и стенгазета антифашистского содержания.
+                    Музей имеет и открытую выставочную площадку, на которой представлены образцы боевой техники, участвующей в боях на берегу Днепра. <span>Туристический маршрут названный «Золотое кольцо Гомельщины» включен в экскурсии музея.</span>
+                </div>
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="house-of-merchant">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">Дом купца Наума Долгина</h2>
+                <div class="textblock__content">
+                    <div class="textblock__gallery pswp-gallery" id="my-gallery">
+                        <a
+                            href="../img/loev/gallery(house of merchant naum dolgin)/01.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="887"
+                            target="_blank"
+                        >
+                            <img title="галерея(нажмите для просмотра)" src="../img/loev/gallery(house of merchant naum dolgin)/01.jpg" alt=""/>
+                        </a>
+                        <a
+                            href="../img/loev/gallery(house of merchant naum dolgin)/02.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="887"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/loev/gallery(house of merchant naum dolgin)/03.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="887"
+                            target="_blank"
+                        >
+                        </a>
+                    </div>
+                    <div class="textblock__map map">
+                        <div class="map__banner">
+                            <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                        </div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acbb5f47aa80e7552eb1bd6cd8a7d62f44ab1cef6f12a9dcd7059eb3f563e58ad&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="textblock__text">
+                    <span>Расположен в городском поселке Лоев, по адресу: улица Советская, 1. Памятник архитектуры с элементами неоклассицизма. Выполнен из кирпича.</span>
+                </div>
+                <div class="textblock__text">
+                    Прямоугольный в плане двухэтажный дом, накрытый 4-хскатной вальмовой крышей. Главный фасад разделен по вертикали сложным карнизом с орнаментом и сухариками, по горизонтали проходит ритм рустованных лопаток. Поверхность стены первого этажа прорезана лучковыми оконными проемами, которые украшены замковым камнем. Окна второго этажа декорированы наличниками, сандриками и орнаментом. Система планировки коридорная.
+                    Построен в 1847 году и является самым старым зданием в г. п. Лоев. В начале XX века его левая часть была перестроена. В 1997 году началась масштабная реконструкция памятника, которая завершилась в 2004 году к 500-летию Лоева. Сейчас в этом здании расположены районная и детская библиотеки, а также районный отдел культуры.
+                    Внесен в Государственный список историко-культурных ценностей Республики Беларусь.
+                </div>
+            </div>
+            <div class="welcome-screen__background ibg">
+                <div class="welcome-screen__background-color ibg__color"></div>
+                <img src="../img/loev/textblock-background1.jpg" alt="background">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container _container">
+            <div class="footer__copyright">Copyright ©2023 All rights reserved <span class="copyright__line">|</span><br> This site is made by <span>Shukan Ivan</span></div>
+            <div class="footer__media">
+                <a href="https://github.com/i-shukan" target="_blank">
+                    <img src="../img/footer/icons/github.svg" alt="github">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script type="module">
+        import PhotoSwipeLightbox from '../photoswipe/dist/photoswipe-lightbox.esm.js';
+        const lightbox = new PhotoSwipeLightbox({
+          gallery: '#my-gallery',
+          children: 'a',
+          showHideAnimationType: 'zoom',
+          wheelToZoom: true,
+          pswpModule: () => import('../photoswipe/dist/photoswipe.esm.js')
+        });
+        lightbox.init();
+    </script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
