@@ -4,11 +4,545 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:normal,500,700" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/longread.css">
+    <link rel="stylesheet" href="../css/turow.css">
+    <link rel="stylesheet" href="../photoswipe/dist/photoswipe.css">
     <link rel="icon" href="../img/герб.ico">
     <title>Золотое кольцо Гомельщины</title>
 </head>
 <body>
-    
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"><span></span></div>
+        </div>
+    </div>
+    <section class="welcome-screen">
+        <div class="welcome-screen__container _container">
+            <h1 class="welcome-screen__title">ТУРОВ</h1>
+            <ol class="welcome-screen__list list-welcomescreen">
+                <li class="list-welcomescreen__item"><a href="#history-of-city">история города</a></li>
+                <li class="list-welcomescreen__item"><a href="#ancient-turow">Комплекс «Древний Туров»</a></li>
+                <li class="list-welcomescreen__item"><a href="#monument">Памятник Кириллу Туровскому</a></li>
+                <li class="list-welcomescreen__item"><a href="#cross">Растущий из земли крест</a></li>
+                <li class="list-welcomescreen__item"><a href="#museum">Краеведческий музей</a></li>
+                <li class="list-welcomescreen__item"><a href="#turow-meadow">«Туровский луг»</a></li>
+                <li class="list-welcomescreen__item"><a href="#church">Церковь Всех Святых</a></li>
+                <li class="list-welcomescreen__item"><a href="#cathedral">Кафедральный собор святителей<br> Кирилла и Лаврентия Туровских</a></li>
+            </ol>
+            <div class="welcome-screen__map map">
+                <div class="map__banner">
+                    <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                </div>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af9d5e296e959b3cbc74cd756278c6b80e4953d3bef4884120bf3e3f842883b9a&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+        <div class="welcome-screen__background ibg">
+            <div class="welcome-screen__background-color ibg__color"></div>
+            <img src="../img/turow/01.jpg" alt="background">
+        </div>
+    </section>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__wrapper">
+                <div class="header__icon">
+                    <img src="../img/header/герб.png" alt="icon">
+                </div>
+                <a class="header__title" href="../index.html">Золотое кольцо Гомельщины</a>
+            </div>
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </div>
+        <div class="header__menu menu-header">
+            <h5 class="menu-header__title">населённые пункты:</h5>
+            <ul class="menu-header__list">
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/gomel.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/Гомель.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">гомель</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/rechica.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/речица.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">речица</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/mozir.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/мозырь.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">мозырь</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/turow.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/туров.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">туров</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/vetka.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/ветка.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">ветка</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/loev.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/лоев.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">лоев</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/chechersk.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/чечерск.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">чечерск</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/kb.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/красный берег.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">КРАСНЫЙ БЕРЕГ<br>(ЖЛОБИНСКИЙ Р-Н)</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-header__item_big menu-item">
+                    <a href="../pages/yrovichi.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/юровичи.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">ЮРОВИЧИ<br>(КАЛИНКОВИЧСКИЙ Р-Н)</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-header__item_big menu-item">
+                    <a href="../index.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/home-page.png" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">на главную</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main__textblock textblock" id="history-of-city">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">история города</h2>
+                <div class="textblock__text">
+                    <span>Историки считают, что Туров был центром восточнославянского племени дреговичей, имевшего свое княжение еще до вхождения в состав древнерусского государства.</span>
+                </div>
+                <div class="textblock__text">
+                    <span>Впервые Туров упоминается в «Повести временных лет» под 980 годом: «Рогволод пришел из-за моря и имяше волость свою в Полотьске, а Тур Турове, от него же и Туровци прозвашася».</span>
+                    В Турове обрабатывали железо, дерево и кость, делали гончарные изделия, шили обувь, вырезали красивые украшения из драгоценных металлов. Городские купцы торговали с Киевом и другими древнерусскими княжествами.
+                </div>
+                <div class="textblock__text">
+                    Летописи говорят, что в конце Х века великий князь Киевский Владимир Святославич отправил своего сына Святополка править Туровом.
+                </div>
+                <div class="textblock__text">
+                    Известно, что в середине XII века при поддержке жителей Турова князем стал внук Святополка Юрий Ярославич, правивший с 1157-го по 1162 год. Но это сильно не понравилось киевскому князю Изяславу Давидовичу и в том же 1157 году он собрал сильное войско при поддержке смоленских, галицких и других княжеств и отправился в поход на Туров, рассчитывая захватить город с ходу. Однако Туров выстоял. Войска великого князя киевского приступили к продолжительной осаде, которая длилась 10 недель.
+                    Благодаря исключительной стойкости жителей города и воинскому мастерству князя Юрия Ярославича, независимость Туровского княжества удалось отстоять. Следующий киевский князь также пытался подчинить своей власти Туров, но так же безуспешно. 
+                </div>
+                <div class="textblock__text">
+                    <span>Туров был не только большим политическим центром, но и одной из культурных столиц древнерусской земли.</span> В самом начале ХІ века при Святополке в Турове была основана епископская кафедра. В городе, согласно летописи, на начало ХІІ века было около 40 церквей. Доподлинно известны, что там были Спасов и Богородицкий храмы или монастыри, Борисоглебский монастырь, Никольский монастырь, Варваринский монастырь, монастырь во имя св. Николая, Спасо-Троицкая церковь, Спасо-Преображенская церковь. Ильинская церковь, Петропавловская церковь, Всехсвятская церковь.
+                </div>
+                <div class="textblock__text">
+                    Центральной фигурой в те времена был епископ Туровской епархии Кирилл Туровский – активный просветитель и распространитель Христианства. Он создал и записал молитвы, проповеди и притчи, которые широко разошлись по древнерусским княжествам. Годом его рождения считается 1130, а смерти – 1186.
+                </div>
+                <div class="textblock__text">
+                    О высокой культуре Туровского княжества свидетельствуют археологические исследования, многие из которых подтверждают существование Туровской художественной школы. В 1865 году было найдено Туровское Евангелие – древний рукописный памятник XI века. Это самая ранняя (из сохранившихся) книга, созданная в Беларуси. Богато иллюстрированное Туровское Евангелие сегодня хранится в Вильнюсе, там же находится второе Туровское Евангелие середины XVI века, списанное с очень старого оригинала.
+                </div>
+                <div class="textblock__text">
+                    <span>Красивый и величественный город Туров был разрушен в Рождество 1241 года монголо-татарами, убившими всех «от мала до велика» включая епископов, священников и монахов. Монголо-татары уничтожили все христианские святыни и монастыри. Туров пришел в упадок, епархию перевели в Пинск.</span>
+                </div>
+                <div class="textblock__text">
+                    Красивый и величественный город Туров был разрушен в Рождество 1241 года монголо-татарами, убившими всех «от мала до велика» включая епископов, священников и монахов. Монголо-татары уничтожили все христианские святыни и монастыри. Туров пришел в упадок, епархию перевели в Пинск.
+                    Сохранилось 58 текстов Кирилла Туровского. Уровень владения словом у него был такой, что его называли: «Златоуст, паче всех нам воссиявший на Руси». Современники восторгались красотой его слога и силой эмоционального воздействия. Творения великого гуманиста древности святителя Кирилла Туровского свидетельствуют всему миру о глубине корней христианской культуры Беларуси.
+                    В 1993 году благодарные потомки установили памятник человеку, прославившему Туровскую землю, на самом высоком месте Турова – на Замковой горе.
+                    Недалеко от этого места, на Борисоглебском кладбище, находится каменный крест, ставший сейчас местом паломничества. Он неожиданно появился из-под земли и до сих пор ежегодно увеличивается в высоту более чем на сантиметр. Есть несколько версий этого чуда, которое, как говорят, оказывает положительное действие, стоит только прикоснуться к нему. По одной из версий – крест один из трех, приплывших по Днепру и Припяти из Киева сразу после крещения Руси (два креста находятся в деревянной церкви Всех Святых). По другой версии, крест дает основания для раскрытия тайны захоронения Кирилла Туровского, которое до сих пор неизвестна.
+                </div>
+                <div class="textblock__text">
+                    Легенда вселяет надежду, что когда-нибудь откроются неизвестные факты о Кирилле Туровском и времени, в котором он жил.
+                </div>
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="ancient-turow">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">Комплекс «Древний Туров»</h2>
+                <div class="textblock__content">
+                    <div class="textblock__gallery pswp-gallery" id="my-gallery">
+                        <a
+                            href="../img/turow/gallery(ancient-turow)/01.jpg"
+                            data-pswp-width="1200"
+                            data-pswp-height="900"
+                            target="_blank"
+                        >
+                            <img title="галерея(нажмите для просмотра)" src="../img/turow/gallery(ancient-turow)/01.jpg" alt=""/>
+                        </a>
+                        <a
+                            href="../img/turow/gallery(ancient-turow)/02.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="747"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/turow/gallery(ancient-turow)/03.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="887"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/turow/gallery(ancient-turow)/04.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="887"
+                            target="_blank"
+                        >
+                        </a>
+                    </div>
+                    <div class="textblock__map map">
+                        <div class="map__banner">
+                            <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                        </div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af9fee859d4b94140ec612f5128435a383d16dc990f7b1a0cd660264b7e718128&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="textblock__text">
+                    Музей построен на месте древнего храма, разрушенного в 1230 году. После землетрясения от церкви, возведённой в 1170-х годах, остался только фундамент. На этом фундаменте, обнаруженном в 1961 году, и был сооружён стеклянный шатёр нынешнего музея.
+                </div>
+                <div class="textblock__text">
+                    <span>Это самое большое здание на территории земель древней Руси, находящееся в западной его части.</span> В музее можно посмотреть, как Туров выглядел раньше, а также познакомиться с обширной коллекцией приспособлений для ремесленного дела.
+                </div>
+            </div>
+            <div class="welcome-screen__background ibg">
+                <div class="welcome-screen__background-color ibg__color"></div>
+                <img src="../img/turow/textblock-background.jpg" alt="background">
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="monument">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">Памятник Кириллу Туровскому</h2>
+                <div class="textblock__content">
+                    <div class="textblock__gallery pswp-gallery" id="my-gallery">
+                        <a
+                            href="../img/turow/gallery(monument)/01.jpg"
+                            data-pswp-width="1024"
+                            data-pswp-height="768"
+                            target="_blank"
+                        >
+                            <img title="галерея(нажмите для просмотра)" src="../img/turow/gallery(monument)/01.jpg" alt=""/>
+                        </a>
+                        <a
+                            href="../img/turow/gallery(monument)/02.jpg"
+                            data-pswp-width="1046"
+                            data-pswp-height="1300"
+                            target="_blank"
+                        >
+                        </a>
+                    </div>
+                    <div class="textblock__map map">
+                        <div class="map__banner">
+                            <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                        </div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0a06f6be0a251a4506def95a46f5716c868cca8f62636d07601684631ab08485&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="textblock__text">
+                    Епископ Кирилл Туровский родился и проживал в Турове, поэтому в городе конечно же есть его монумент. Памятник был установлен в 1993 году на территории Замковой горы и выполнен из бетона, покрытого медью.
+                </div>
+                <div class="textblock__text">
+                    Скульптура представляет собой фигуру самого Кирилла Туровского с поднятой головой, а за фигурой находится крест византийской формы.
+                </div>
+                <div class="textblock__text">
+                    <span>Высота памятника составляет 7 м. В левой руке епископ держит книгу, на обложке которой выгравирован крест, а правой рукой указывает на эту книгу.</span>
+                </div>
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="cross">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">Растущий из земли крест</h2>
+                <div class="textblock__content">
+                    <div class="textblock__gallery pswp-gallery" id="my-gallery">
+                        <a
+                            href="../img/turow/gallery(cross)/01.webp"
+                            data-pswp-width="1200"
+                            data-pswp-height="900"
+                            target="_blank"
+                        >
+                            <img title="галерея(нажмите для просмотра)" src="../img/turow/gallery(cross)/01.webp" alt=""/>
+                        </a>
+                        <a
+                            href="../img/turow/gallery(cross)/02.jpg"
+                            data-pswp-width="1200"
+                            data-pswp-height="800"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/turow/gallery(cross)/03.jpg"
+                            data-pswp-width="1200"
+                            data-pswp-height="800"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/turow/gallery(cross)/04.jpg"
+                            data-pswp-width="960"
+                            data-pswp-height="1557"
+                            target="_blank"
+                        >
+                        </a>
+                    </div>
+                    <div class="textblock__map map">
+                        <div class="map__banner">
+                            <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                        </div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A860c7b65b2e771d65a9d39d74dd6b6efe5e0e8472b336b4d48ca6b6155430799&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="textblock__text">
+                    Крест находится на Борисоглебском кладбище, которое расположено на берегу реки Язды. Поверхность креста выщерблена, а концы закруглённые.
+                </div>
+                <div class="textblock__text">
+                    <span>Каменный крест начал расти из-под земли на территории кладбища в середине XX века.</span> Однако, сначала никто не знал, что это крест, так как он имел вид обычного камня. Каждый год камешек становился всё больше и больше и приобретал форму креста. В 2001 году с ним и вовсе произошло необъяснимое событие: зимой, когда температура держалась на уровне -15, снег вокруг креста растаял и образовались лужи, да и сам камень был тёплым на ощупь.
+                </div>
+                <div class="textblock__text">
+                    Кроме того, городе существует поверие о том, что на территории Борисоглебского кладбища похоронены два сына князя Владимира-Крестителя. В смерти братьев считают виновным их сводного брата, являвшегося также и первым Туровским князем.
+                </div>
+            </div>
+            <div class="welcome-screen__background ibg">
+                <div class="welcome-screen__background-color ibg__color"></div>
+                <img src="../img/turow/textblock-background1.jpg" alt="background">
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="museum">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">Краеведческий музей</h2>
+                <div class="textblock__content">
+                    <div class="textblock__gallery pswp-gallery" id="my-gallery">
+                        <a
+                            href="../img/turow/gallery(museum)/01.jpg"
+                            data-pswp-width="589"
+                            data-pswp-height="785"
+                            target="_blank"
+                        >
+                            <img title="галерея(нажмите для просмотра)" src="../img/turow/gallery(museum)/01.jpg" alt=""/>
+                        </a>
+                        <a
+                            href="../img/turow/gallery(museum)/02.webp"
+                            data-pswp-width="960"
+                            data-pswp-height="1280"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/turow/gallery(museum)/03.webp"
+                            data-pswp-width="960"
+                            data-pswp-height="1280"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                        href="../img/turow/gallery(museum)/04.webp"
+                        data-pswp-width="960"
+                        data-pswp-height="1280"
+                        target="_blank"
+                    >
+                    </a>
+                    </div>
+                    <div class="textblock__map map">
+                        <div class="map__banner">
+                            <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                        </div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeef688375421820ba5ccff79066fffbf6e16ec8d5b566bcb5befa6db081a3ec4&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="textblock__text">
+                    <span>Это самый старый музей Гомельской области, который был открыт в 1927 году.</span> Основой для музея послужил кружок истории и природоведения одной из школ. На момент открытия коллекция галереи насчитывала больше сотни экспонатов.
+                </div>
+                <div class="textblock__text">
+                    Основателем, а по совместительству и первым директором музея был М.Е. Бруй. Кроме того, огромную роль в создании музея сыграл П.А. Щекотович – работник библиотеки Народного дома. Экспозиция галереи состояла из предметов археологии, старинных рукописных и печатных изданий, предметов обихода.
+                </div>
+                <div class="textblock__text">
+                    Однако в период Второй Мировой войны все экспонаты музея были полностью уничтожены. В 1949 году галерее выделили новое здание, а до этого времени она располагалась в личном доме самого Щекотовича. <span>Сегодня музей включает в себя несколько экспозиций и выставочный зал, а количество экспонатов, выставляемых в галерее достигает одиннадцати тысяч.</span>
+                </div>
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="turow-meadow">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">«Туровский луг»</h2>
+                <div class="textblock__content">
+                    <div class="textblock__gallery pswp-gallery" id="my-gallery">
+                        <a
+                            href="../img/turow/gallery(turow-meadow)/01.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="887"
+                            target="_blank"
+                        >
+                            <img title="галерея(нажмите для просмотра)" src="../img/turow/gallery(turow-meadow)/01.jpg" alt=""/>
+                        </a>
+                        <a
+                            href="../img/turow/gallery(turow-meadow)/02.jpg"
+                            data-pswp-width="1290"
+                            data-pswp-height="860"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/turow/gallery(turow-meadow)/03.jpg"
+                            data-pswp-width="1280"
+                            data-pswp-height="720"
+                            target="_blank"
+                        >
+                        </a>
+                    </div>
+                    <div class="textblock__map map">
+                        <div class="map__banner">
+                            <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                        </div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A627954b33b7060d6960bf5f2c9db3a7cdd9428913150aeb48482fa72bd8acf1c&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="textblock__text">
+                    Город Туров богат не только своей историей, но и природными особенностями. На этой территории во время своего перелёта в тёплые страны останавливаются многие перелётные птицы, некоторые из которых вьют здесь и свои гнёзда. Именно поэтому на берегу реки Припять в 2008 году был открыт единственный на всей территории Беларуси негосударственный заказник «Туровский луг».
+                </div>
+                <div class="textblock__text">
+                    Каждый год из-за разливов заказник превращается в сеть островов, используемых многими птицами для своих колоний. На территории луга располагается единственная в стране станция кольцевания птиц. <span>Каждый год Туров посещает множество туристов, желающих посетить заказник «Туровский луг», чтобы насладиться наблюдением за редкими птицами, занесёнными в Красную книгу.</span>
+                </div>
+            </div>
+            <div class="welcome-screen__background ibg">
+                <div class="welcome-screen__background-color ibg__color"></div>
+                <img src="../img/turow/textblock-background.jpg" alt="background">
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="church">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">Церковь Всех Святых</h2>
+                <div class="textblock__content">
+                    <div class="textblock__gallery pswp-gallery" id="my-gallery">
+                        <a
+                            href="../img/turow/gallery(church)/01.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="887"
+                            target="_blank"
+                        >
+                            <img title="галерея(нажмите для просмотра)" src="../img/turow/gallery(church)/01.jpg" alt=""/>
+                        </a>
+                        <a
+                            href="../img/turow/gallery(church)/02.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="887"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/turow/gallery(church)/03.webp"
+                            data-pswp-width="450"
+                            data-pswp-height="337"
+                            target="_blank"
+                        >
+                        </a>
+                    </div>
+                    <div class="textblock__map map">
+                        <div class="map__banner">
+                            <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                        </div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4900651a397603217ab040d6ec7bd67ea5c5ecb3e53f9979de661e5251cfb524&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="textblock__text">
+                    Этот храм располагается в деревянном доме, находящемся на одной из центральных улиц города.
+                </div>
+                <div class="textblock__text">
+                    <span>Церковь была сооружена в 1810 году, однако примерно до 1930 года в неё проводились только заупокойные службы.</span>
+                </div>
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="cathedral">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">Кафедральный собор святителей Кирилла и Лаврентия Туровских</h2>
+                <div class="textblock__content">
+                    <div class="textblock__gallery pswp-gallery" id="my-gallery">
+                        <a
+                            href="../img/turow/gallery(cathedral)/01.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="887"
+                            target="_blank"
+                        >
+                            <img title="галерея(нажмите для просмотра)" src="../img/turow/gallery(cathedral)/01.jpg" alt=""/>
+                        </a>
+                        <a
+                            href="../img/turow/gallery(cathedral)/02.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="886"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/turow/gallery(cathedral)/03.jpg"
+                            data-pswp-width="1612"
+                            data-pswp-height="1063"
+                            target="_blank"
+                        >
+                        </a>
+                    </div>
+                    <div class="textblock__map map">
+                        <div class="map__banner">
+                            <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                        </div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A35c4c3a050f11cb4817e1468f522e26e9ad500bae68bba6ff35df50d148377ba&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="textblock__text">
+                    Возведение первого кафедрального храма в городе началось ещё в XII веке. Однако эту церковь разрушили в 13 веке в ходе татарских набегов. В начале прошлого столетия производили сбор средств для постройки нового собора, но Первая Мировая война, государственный переворот и другие немаловажные события, происходившие в этот период в стране, не позволили приступить к строительству.
+                </div>
+                <div class="textblock__text">
+                    К вопросу о возведении храма вернулись лишь в 2008 году, когда президент Беларуси выделил территорию для его строительства. В мае 2010 года заложили первый камень в базис будущей церкви. В следующем году был заложен фундамент будущей колокольни, а также на храм подняли купола и кресты. Собор освятили в 2013 году. Храм выполнен в древнем византийском стиле и имеет 9 куполов. Вместе с крестом высота собора составляет 32 м.
+                </div>
+            </div>
+            <div class="welcome-screen__background ibg">
+                <div class="welcome-screen__background-color ibg__color"></div>
+                <img src="../img/turow/textblock-background1.jpg" alt="background">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container _container">
+            <div class="footer__copyright">Copyright ©2023 All rights reserved <span class="copyright__line">|</span><br> This site is made by <span>Shukan Ivan</span></div>
+            <div class="footer__media">
+                <a href="https://github.com/i-shukan" target="_blank">
+                    <img src="../img/footer/icons/github.svg" alt="github">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script type="module">
+        import PhotoSwipeLightbox from '../photoswipe/dist/photoswipe-lightbox.esm.js';
+        const lightbox = new PhotoSwipeLightbox({
+          gallery: '#my-gallery',
+          children: 'a',
+          showHideAnimationType: 'none',
+          wheelToZoom: true,
+          pswpModule: () => import('../photoswipe/dist/photoswipe.esm.js')
+        });
+        lightbox.init();
+    </script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

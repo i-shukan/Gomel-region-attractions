@@ -1,0 +1,5 @@
+.textblock__text ul li{
+    list-style: circle;
+    margin-left: 30px;
+    margin-top: 15px;
+}

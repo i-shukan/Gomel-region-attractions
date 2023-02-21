@@ -4,11 +4,305 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:normal,500,700" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/longread.css">
+    <link rel="stylesheet" href="../css/vetka.css">
+    <link rel="stylesheet" href="../photoswipe/dist/photoswipe.css">
     <link rel="icon" href="../img/герб.ico">
     <title>Золотое кольцо Гомельщины</title>
 </head>
 <body>
-    
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"><span></span></div>
+        </div>
+    </div>
+    <section class="welcome-screen">
+        <div class="welcome-screen__container _container">
+            <h1 class="welcome-screen__title">ВЕТКА</h1>
+            <ol class="welcome-screen__list list-welcomescreen">
+                <li class="list-welcomescreen__item"><a href="#history-of-city">история города</a></li>
+                <li class="list-welcomescreen__item"><a href="#museum">Ветковский музей старообрядчества и белорусских традиций имени Ф. Г. Шклярова</a></li>
+                <li class="list-welcomescreen__item"><a href="#castle">Хальчанский дворец в д. Хальч</a></li>
+            </ol>
+            <div class="welcome-screen__map map">
+                <div class="map__banner">
+                    <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                </div>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A76b9b11e0e50033f655a12ead01843ad89870c0ad605aa1cac1510e7572b1cfb&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+        <div class="welcome-screen__background ibg">
+            <div class="welcome-screen__background-color ibg__color"></div>
+            <img src="../img/vetka/01.jpg" alt="background">
+        </div>
+    </section>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__wrapper">
+                <div class="header__icon">
+                    <img src="../img/header/герб.png" alt="icon">
+                </div>
+                <a class="header__title" href="../index.html">Золотое кольцо Гомельщины</a>
+            </div>
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </div>
+        <div class="header__menu menu-header">
+            <h5 class="menu-header__title">населённые пункты:</h5>
+            <ul class="menu-header__list">
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/gomel.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/Гомель.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">гомель</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/rechica.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/речица.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">речица</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/mozir.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/мозырь.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">мозырь</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/turow.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/туров.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">туров</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/vetka.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/ветка.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">ветка</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/loev.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/лоев.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">лоев</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/chechersk.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/чечерск.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">чечерск</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/kb.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/красный берег.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">КРАСНЫЙ БЕРЕГ<br>(ЖЛОБИНСКИЙ Р-Н)</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-header__item_big menu-item">
+                    <a href="../pages/yrovichi.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/юровичи.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">ЮРОВИЧИ<br>(КАЛИНКОВИЧСКИЙ Р-Н)</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-header__item_big menu-item">
+                    <a href="../index.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/home-page.png" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">на главную</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main__textblock textblock" id="history-of-city">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">история города</h2>
+                <div class="textblock__text">
+                    <span>Ветку основали в 1685 г. староверы, которые покинули центральную России из-за религиозных притеснений.</span> Переселенцы вскоре получили грамоту от короля Речи Посполитой, гарантировавшую им свободу вероисповедания и налоговые льготы. В 1695 г. в Ветке появилась первая в ВКЛ старообрядческая церковь Покрова Богородицы, позже начали возводить и другие старообрядческие храмы.
+                </div>
+                <div class="textblock__text">
+                    В конце XVII—XVIII вв. Ветка превратилась в крупный торговый и ремесленный центр. Из Ветковской слободы староверие распространилось по всей России и Восточной Польше. В то же время город периодически сжигался московскими войсками, которые таким способом боролись с раскольниками.
+                </div>
+                <div class="textblock__text">
+                    В результате 1-го раздела Речи Посполитой в 1772 г. Ветка вошла в состав России. В городе начала развиваться текстильная промышленность, многие жители работали на заготовке леса.
+                </div>
+                <div class="textblock__text">
+                    После Октябрьской революции поселок Ветка стал частью РСФСР, но в 1926 г. вернулся в БССР уже городом.
+                </div>
+                <div class="textblock__text">
+                    В результате аварии на ЧАЭС в 1986 г. город серьезно пострадал от радиационного загрязнения.
+                </div>
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="museum">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">Ветковский музей старообрядчества и белорусских традиций имени Ф. Г. Шклярова</h2>
+                <div class="textblock__content">
+                    <div class="textblock__gallery pswp-gallery" id="my-gallery">
+                        <a
+                            href="../img/vetka/gallery(museum)/01.webp"
+                            data-pswp-width="1800"
+                            data-pswp-height="1200"
+                            target="_blank"
+                        >
+                            <img title="галерея(нажмите для просмотра)" src="../img/vetka/gallery(museum)/01.webp" alt=""/>
+                        </a>
+                        <a
+                            href="../img/vetka/gallery(museum)/02.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="887"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/vetka/gallery(museum)/03.jpg"
+                            data-pswp-width="711"
+                            data-pswp-height="533"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/vetka/gallery(museum)/04.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="887"
+                            target="_blank"
+                        >
+                        </a>
+                    </div>
+                    <div class="textblock__map map">
+                        <div class="map__banner">
+                            <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                        </div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A985097136a502ef3f85d00d6f72f278a26da0ebf9abefc1a9479997630e920de&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="textblock__text">
+                    <span>Музей имени Шклярова был основан в 1978 году, однако первая постоянная экспозиция появилась тут всего в 1987 году.</span> Музей функционирует в достроенном и восстановленном историческом особняке, в котором некогда жил купец Грошиков. Экспозиция представлена научно-исследовательскими экспонатам, художественным наследием региона и предметами творчества народных ремесел.
+                </div>
+                <div class="textblock__text">
+                    Посетители узнают интересную информацию о православной культуре, увидят предметы быта и интерьера белорусской деревни, а также старообрядческой Ветки XVII-XVIII веков.
+                </div>
+                <div class="textblock__text">
+                    Из особо ценных экспонатов в фонде музея представлены уникальные коллекции старообрядческих икон, редкие рукописные и старопечатные книги, датируемые XVI-XIX веками, а также коллекции народного ткачества.
+                </div>
+                <div class="textblock__text">
+                    Для тех, кого заинтересуют местные ремесла можно посетить отдел реставрации и возрождения народного творчества, открытый в музее. <span>Сегодня в фонде музея более 11 000 экспонатов.</span>
+                </div>
+            </div>
+            <div class="welcome-screen__background ibg">
+                <div class="welcome-screen__background-color ibg__color"></div>
+                <img src="../img/vetka/textblock-background.jpg" alt="background">
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="castle">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">Хальчанский дворец в д. Хальч</h2>
+                <div class="textblock__content">
+                    <div class="textblock__gallery pswp-gallery" id="my-gallery">
+                        <a
+                            href="../img/vetka/gallery(castle)/01.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="747"
+                            target="_blank"
+                        >
+                            <img title="галерея(нажмите для просмотра)" src="../img/vetka/gallery(castle)/01.jpg" alt=""/>
+                        </a>
+                        <a
+                            href="../img/vetka/gallery(castle)/02.jpg"
+                            data-pswp-width="1200"
+                            data-pswp-height="675"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/vetka/gallery(castle)/03.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="887"
+                            target="_blank"
+                        >
+                        </a>
+                    </div>
+                    <div class="textblock__map map">
+                        <div class="map__banner">
+                            <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                        </div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A281a96d6dd5412517c083ab56ce9ec6a1ee36b8e1df9250c11afe69815762939&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="textblock__text">
+                    <span>Дворец в деревне Хальч Ветковского района Гомельской области мог бы стать таким же знаменитым, как и Гомельский дворец Румянцевых-Паскевичей. Но этот памятник архитектуры, построенный в стиле позднего классицизма, отчаянно нуждается в реставрации.</span> Вот уже более 40 лет здесь не велись никакие работы, последний раз реставраторы были в Хальче в 1972-1973 годах.
+                </div>
+                <div class="textblock__text">
+                    <span>Деревня Хальч</span> расположилась на высоком правом берегу Сожа, она – <span>одна из древнейших деревень Беларуси.</span> Если верить археологам, то первые люди появились на этой земле примерно в V веке до нашей эры. Необычное название населенного пункта, по некоторым предположениям, имеет балтское происхождение. Вероятно, что Хальч основали варяги. Деревня впервые упоминается в летописи под 1437 годом, когда она была подарена предку Халецких Павлу Мишковичу великим князем литовским Свидригайло. С этого момента Хальч – резиденция славного белорусско-украинского рода, члены которого занимали видное положение в Великом княжестве Литовском. Считается, что и фамилия их – Халецкие – пошла от названия деревни Хальч.
+                </div>
+                <div class="textblock__text">
+                    <span>Строительство здесь дворца началось в конце XVIII века.</span> Один из Халецких как раз выгодно женился: взял в жены девушку из рода Радзивилл. За счет ее приданного, а также денег, вырученных от продажи Ветки, и было построено роскошное здание в стиле позднего классицизма. Место для возведения дворца было выбрано весьма удачно – на мысе, на высоте 10 метров над Сожем. Имя архитектора, построившего родовое гнездо Халецких, неизвестно.
+                </div>
+                <div class="textblock__text">
+                    Первый этаж постройки был кирпичным, а второй – деревянным. Правда, на первый взгляд это было не очень заметно, потому что оба этажа были поштукатурены и покрашены в один цвет. Сначала это был белый цвет, а потом красный. Парадный фасад был украшен портиком ионического ордера. Фасад со стороны парка тоже привлекал внимание. На первом этаже находилась большая полукруглая терраса на сводчатой арочной основе цокольного уровня, окруженная балюстрадой и имеющая две лестницы по бокам. По периметру этой террасы находились восемь колонн, которые поддерживали открытый балкон на втором этаже. На этот балкон выходили стеклянные двери главного бального зала. Восточная сторона здания имела пристройку, на крыше которой находилась еще одна терраса – на этот раз выходящая на реку.
+                </div>
+                <div class="textblock__text">
+                    <span>Изюминкой строения была «рустовка», украшавшая стены и наличники первого этажа. Это имитация под природные каменные блоки, немного выступающие на гладкой поверхности.</span>
+                </div>
+                <div class="textblock__text">
+                    Внутри дворец поражал своим великолепием. Он имел коридорную схему расположения комнат, но главный зал и другие парадные помещения находились на втором этаже. Во дворце можно было полюбоваться ценной старинной мебелью, полистать редкие книги из обширной библиотеки. Кроме того здесь находился родовой архив Халецких, а также коллекции ковров, серебра и фарфора. Много было во дворце различных картин и рисунков. В советское время все интерьеры дворца были уничтожены.
+                </div>
+                <div class="textblock__text">
+                    Главный фасад дворца выходил на открытый двор, на котором располагался газон и фонтан. С двух сторон от главного входа отходили одноэтажные флигели с четырехколонными портиками. К въездным воротам вела длинная аллея, слева от которой находились хозяйственные строения. Усадьба стояла в красивом пейзажном парке, прорезанном широким оврагом, по которому протекал ручей. Через этот овраг был перекинут висячий мост.
+                </div>
+                <div class="textblock__text">
+                    Халецкие владели дворцом и усадьбой до 1812 года. Когда Наполеон вступил на эту территорию, они приняли его сторону. После поражения французской армии Халецкие навсегда покинули эти края. Их усадьбу конфисковали и продали с торгов одному из представителей местного шляхетского рода Войнич-Сеножетских.
+                    <span>Последним владельцем дворца был Зигмунд Войнич-Сеножетский, который был знаменит своими балами и охотами, которые он устраивал в Хальче.</span>
+                </div>
+                <div class="textblock__text">
+                    <span>В настоящее время во дворце Халецких располагается филиал Гомельского областного краеведческого музея.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container _container">
+            <div class="footer__copyright">Copyright ©2023 All rights reserved <span class="copyright__line">|</span><br> This site is made by <span>Shukan Ivan</span></div>
+            <div class="footer__media">
+                <a href="https://github.com/i-shukan" target="_blank">
+                    <img src="../img/footer/icons/github.svg" alt="github">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script type="module">
+        import PhotoSwipeLightbox from '../photoswipe/dist/photoswipe-lightbox.esm.js';
+        const lightbox = new PhotoSwipeLightbox({
+          gallery: '#my-gallery',
+          children: 'a',
+          showHideAnimationType: 'none',
+          wheelToZoom: true,
+          pswpModule: () => import('../photoswipe/dist/photoswipe.esm.js')
+        });
+        lightbox.init();
+    </script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

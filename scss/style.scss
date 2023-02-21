@@ -40,6 +40,90 @@ body {
     margin: 0px 30px;
 }
 
+/*--------PRELOADER---------------------------------------------------------------------------*/
+
+.preloader {
+    background-color: #455A64;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 800;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.preloader__item {
+    height: torem(55);
+    width: torem(55);
+    -webkit-animation: preloader__item-1 4.8s linear infinite;
+    animation: preloader__item-1 4.8s linear infinite;
+}
+@-webkit-keyframes preloader__item-1 {
+    0%   { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes preloader__item-1 {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.preloader__item span {
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    bottom: 0; right: 0;
+    margin: auto;
+    height: torem(55);
+    width: torem(55);
+    clip: rect(0, torem(55), torem(55), torem(24));
+    -webkit-animation: preloader__item-2 1.2s linear infinite;
+    animation: preloader__item-2 1.2s linear infinite;
+}
+@-webkit-keyframes preloader__item-2 {
+    0%   { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(220deg); }
+}
+@keyframes preloader__item-2 {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(220deg); }
+}
+.preloader__item span::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    bottom: 0; right: 0;
+    margin: auto;
+    height: torem(55);
+    width: torem(55);
+    clip: rect(0, torem(55), torem(55), torem(24));
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    -webkit-animation: preloader__item-3 1.2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+    animation: preloader__item-3 1.2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+}
+@-webkit-keyframes preloader__item-3 {
+    0%   { -webkit-transform: rotate(-140deg); }
+    50%  { -webkit-transform: rotate(-160deg); }
+    100% { -webkit-transform: rotate(140deg); }
+}
+@keyframes preloader__item-3 {
+    0%   { transform: rotate(-140deg); }
+    50%  { transform: rotate(-160deg); }
+    100% { transform: rotate(140deg); }
+}
+.preloader.loaded_hiding {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+.preloader.loaded {
+    display: none;
+}
+body.loaded {
+    overflow: auto;
+}
+
 /*--------BODY-----------------------------------------------------------*/
 
 .welcome-screen {

@@ -1,0 +1,6 @@
+.welcome-screen__list li:not(:last-child) {
+    margin: 0px 0px 1.75rem 0px;
+}
+.welcome-screen__list li a{
+    font-size: 1.5rem;
+}

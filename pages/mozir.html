@@ -4,11 +4,415 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:normal,500,700" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/longread.css">
+    <link rel="stylesheet" href="../css/mozir.css">
+    <link rel="stylesheet" href="../photoswipe/dist/photoswipe.css">
     <link rel="icon" href="../img/герб.ico">
     <title>Золотое кольцо Гомельщины</title>
 </head>
 <body>
-    
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"><span></span></div>
+        </div>
+    </div>
+    <section class="welcome-screen">
+        <div class="welcome-screen__container _container">
+            <h1 class="welcome-screen__title">МОЗЫРЬ</h1>
+            <ol class="welcome-screen__list list-welcomescreen">
+                <li class="list-welcomescreen__item"><a href="#history-of-city">история города</a></li>
+                <li class="list-welcomescreen__item"><a href="#ensemble">Ансамбль городище на замковой горе</a></li>
+                <li class="list-welcomescreen__item"><a href="#landscape-reserve">Республиканский ландшафтный заказник «Мозырские овраги»</a></li>
+                <li class="list-welcomescreen__item"><a href="#cathedral">Кафедральный собор святого Архангела Михаила</a></li>
+                <li class="list-welcomescreen__item"><a href="#church">Костел Святого Михаила Архангела и бывший монастырь цистерцианок</a></li>
+            </ol>
+            <div class="welcome-screen__map map">
+                <div class="map__banner">
+                    <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                </div>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae395e3420012e3bea1523006ccc41d2f1c8822ed5cdcc42f03525bbff1fb7b78&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+        <div class="welcome-screen__background ibg">
+            <div class="welcome-screen__background-color ibg__color"></div>
+            <img src="../img/mozir/01.jpg" alt="background">
+        </div>
+    </section>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__wrapper">
+                <div class="header__icon">
+                    <img src="../img/header/герб.png" alt="icon">
+                </div>
+                <a class="header__title" href="../index.html">Золотое кольцо Гомельщины</a>
+            </div>
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </div>
+        <div class="header__menu menu-header">
+            <h5 class="menu-header__title">населённые пункты:</h5>
+            <ul class="menu-header__list">
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/gomel.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/Гомель.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">гомель</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/rechica.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/речица.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">речица</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/mozir.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/мозырь.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">мозырь</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/turow.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/туров.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">туров</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/vetka.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/ветка.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">ветка</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/loev.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/лоев.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">лоев</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/chechersk.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/чечерск.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">чечерск</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-item">
+                    <a href="../pages/kb.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/красный берег.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">КРАСНЫЙ БЕРЕГ<br>(ЖЛОБИНСКИЙ Р-Н)</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-header__item_big menu-item">
+                    <a href="../pages/yrovichi.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/юровичи.svg" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">ЮРОВИЧИ<br>(КАЛИНКОВИЧСКИЙ Р-Н)</div>
+                    </a>
+                </li>
+                <li class="menu-header__item menu-header__item_big menu-item">
+                    <a href="../index.html">
+                        <div class="menu-item__icon">
+                            <img src="../img/header/icons/home-page.png" alt="item-icon">
+                        </div>
+                        <div class="menu-item__text">на главную</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main__textblock textblock" id="history-of-city">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">история города</h2>
+                <div class="textblock__text">
+                    Мозырь — холмистый, со сложным необычным рельефом город на юго-востоке Беларуси. Расположен в Гомельской области на правом берегу живописной Припяти. <span>Это старейший населенный пункт со своим замком, крупнейшим речным портом, самым длинным в стране автомобильным мостом, горнолыжным курортом и другими уникальными туристическими достопримечательностями.</span> Население Мозыря составляет порядка 112 000 человек.
+                </div>
+                <div class="textblock__text">
+                    Мозырь впервые упоминается в Ипатьевской летописи в 1155 году. В это время князь киевский Юрий Долгорукий подарил город черниговскому князю Святославу Ольговичу. В ХІІ в. Мозырь находился в составе Туровского княжества, которое подчинялось Киеву, а с XIV в. его земли являлись частью Великого княжества Литовского. В 1569 году Мозырь вошел в состав Речи Посполитой.
+                    В 1577 году город получает право на самоуправление и обретает собственный герб. В XVI и XVII веках в Мозыре накаляются противостояния православных, католиков и униатов, часто происходят феодальные войны.
+                </div>
+                <div class="textblock__text">
+                    После II раздела Речи Посполитой город переходит в состав Российской империи и становится центром Мозырского уезда Минской губернии. Здесь размещается важный штаб речной флотилии с боевыми катерами особого назначения, которые контролировали бассейн Припяти и блокировали германские войска.
+                </div>
+                <div class="textblock__text">
+                    Экономика города развивалась крайне медленно. Город был отдален от важных торговых путей и не мог похвастаться природными ресурсами. Все изменило строительство железной дороги и мелиоративные работы. К началу XX века Мозырь стал центром торговли лесом, появились предприятия и заводы. В 1917 году в городе устанавливается советская власть. <span>В 1932 году Мозырь становится центром Полесской области, а с августа 1941 года город оккупируют немцы — освобождение пришло лишь в январе 1944 г.</span>
+                </div>
+                <div class="textblock__text">
+                    В настоящее время в Мозыре развиваются отрасли по нефтепереработке, машиностроению, деревообработке и пищевой промышленности. На нефтеперерабатывающем заводе производится бензин, дизельное топливо, парафин, мазут, сера. Важнейшим производством является добыча каменной соли на базе Мозырьского месторождения.
+                </div>
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="ensemble">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">Ансамбль городище на замковой горе</h2>
+                <div class="textblock__content">
+                    <div class="textblock__gallery pswp-gallery" id="my-gallery">
+                        <a
+                            href="../img/mozir/gallery(ensemble)/01.jpg"
+                            data-pswp-width="1024"
+                            data-pswp-height="768"
+                            target="_blank"
+                        >
+                            <img title="галерея(нажмите для просмотра)" src="../img/mozir/gallery(ensemble)/01.jpg" alt=""/>
+                        </a>
+                        <a
+                            href="../img/mozir/gallery(ensemble)/02.jpg"
+                            data-pswp-width="768"
+                            data-pswp-height="512"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/mozir/gallery(ensemble)/03.jpg"
+                            data-pswp-width="950"
+                            data-pswp-height="713"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/mozir/gallery(ensemble)/04.jpg"
+                            data-pswp-width="950"
+                            data-pswp-height="713"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/mozir/gallery(ensemble)/05.jpg"
+                            data-pswp-width="950"
+                            data-pswp-height="633"
+                            target="_blank"
+                        >
+                        </a>
+                    </div>
+                    <div class="textblock__map map">
+                        <div class="map__banner">
+                            <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                        </div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0765f5a4bc3961c6c3899a0b052335339748023cc78e5f54094552473dff7a58&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="textblock__text">
+                    <span>Расположен по адресу: Гора Коммунаров, 8, на мысе правого коренного берега р.Припять, между 2 оврагами.</span> Площадка ромбовидной формы, размерами 12–140 Х 100 м, высотой 15–20 м. Впервые исследована в 1951 году Ю. В. Кухаренко, который выявил культурный пласт от 0,6–0,8 м в центре до 2–2,2 м вдоль западного края площадки.
+                </div>
+                <div class="textblock__text">
+                    Датируется XII – XIII веками, но существуют версии и о более раннем происхождении городища. Первая Замковая гора была расположена почти на том же месте, где и сейчас –между площадями Ленина и Горького, на правом берегу реки Припяти. Размеры городища были примерно 130 на 80 метров. Древние жители укрепили его 4-хметровым валом и 3-хметровым рвом. По прошествии двух веков городище перенесли уже на саму гору с нынешним названием гора Коммунаров (прежде – Замковая и Спасская). Возможно, это случилось по причине роста населения, или самим жителям такая возвышенность показалась более безопасной.
+                </div>
+                <div class="textblock__text">
+                    С тех пор городище много раз перестраивалось, восстанавливалось, но после пожара в XVII веке больше не возводилось, полностью утратив свое оборонное значение. В этот период на Горе Коммунаров была возведена Спасская церковь (действовавшая до XIX века), остатки которой были обнаружены в 2004 году. В середине XIX века Гора Коммунаров плотно застраивается деревянными и каменными жилыми и хозяйственными домами. Ее фрагменты были обнаружены в 2004 году.
+                </div>
+                <div class="textblock__text">
+                    В нынешнем виде городище было реконструировано в 2005 году к 850-летию Мозыря – как и много лет назад, укрепление сделали деревянным. <span>Возведенный деревянный замок является уменьшенной копией древней постройки, но архитекторы старались использовать близкие по фактурам и качествам материалы, а также чертежи и рисунки городища.</span>
+                </div>
+                <div class="textblock__text">
+                    Сейчас на территории этого маленького деревянного шедевра зодчества расположен Мозырский объединенный краеведческий музей. Городище – одно из самых атмосферных мест в Беларуси для проведения тематических рыцарских и фольклорных праздников и конкурсов. Нередко здесь проходят и выставки-продажи местных ремесленников. Для детей устроен маленький игровой средневековый городок в средневековом стиле с башнями, лестницами, арками из дерева, населенный сказочными персонажами.
+                </div>
+                <div class="textblock__text">
+                    Памятник внесен в Государственный список историко-культурных ценностей Республики Беларусь.
+                </div>
+            </div>
+            <div class="welcome-screen__background ibg">
+                <div class="welcome-screen__background-color ibg__color"></div>
+                <img src="../img/mozir/textblock-background.jpg" alt="background">
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="landscape-reserve">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">Республиканский ландшафтный заказник «Мозырские овраги»</h2>
+                <div class="textblock__content">
+                    <div class="textblock__gallery pswp-gallery" id="my-gallery">
+                        <a
+                            href="../img/mozir/gallery(landscape-reserve)/01.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="747"
+                            target="_blank"
+                        >
+                            <img title="галерея(нажмите для просмотра)" src="../img/mozir/gallery(landscape-reserve)/01.jpg" alt=""/>
+                        </a>
+                        <a
+                            href="../img/mozir/gallery(landscape-reserve)/02.jpg"
+                            data-pswp-width="1200"
+                            data-pswp-height="675"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/mozir/gallery(landscape-reserve)/03.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="887"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/mozir/gallery(landscape-reserve)/04.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="887"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/mozir/gallery(landscape-reserve)/05.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="747"
+                            target="_blank"
+                        >
+                        </a>
+                    </div>
+                    <div class="textblock__map map">
+                        <div class="map__banner">
+                            <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                        </div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A54b74a4e3ff739e35f7d8f4c5f510c5ba16da867ed59917b8c3f4b0831a5df43&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="textblock__text">
+                    <span>Республиканский ландшафтный заказник «Мозырские овраги», созданный в 1986 году, знаменит прежде всего своим уникальным рельефом. Он представляет собой систему возвышенностей с крутыми склонами, покрытыми густой растительностью.</span>
+                </div>
+                <div class="textblock__text">
+                    Северную сторону предпочитают смешанные сосново-березовые сообщества, а южную — дубово-грабовые. Вдоль речек встречается черная ольха. В общей сложности на территории Мозырских оврагов произрастает 496 видов высших сосудистых растений. Некоторые из них (например, ветреница лесная) занесены в Красную книгу Беларуси.
+                </div>
+                <div class="textblock__text">
+                    Уникальность данного заказника заключается еще и в том, что он почти полностью находится в черте Мозыря, по дну некоторых оврагов проходят улицы, что придает участку городской застройки особую живописность.
+                </div>
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="cathedral">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">Кафедральный собор святого Архангела Михаила</h2>
+                <div class="textblock__content">
+                    <div class="textblock__gallery pswp-gallery" id="my-gallery">
+                        <a
+                            href="../img/mozir/gallery(cathedral)/01.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="887"
+                            target="_blank"
+                        >
+                            <img title="галерея(нажмите для просмотра)" src="../img/mozir/gallery(cathedral)/01.jpg" alt=""/>
+                        </a>
+                        <a
+                            href="../img/mozir/gallery(cathedral)/02.jpg"
+                            data-pswp-width="1280"
+                            data-pswp-height="853"
+                            target="_blank"
+                        >
+                        </a>
+                    </div>
+                    <div class="textblock__map map">
+                        <div class="map__banner">
+                            <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                        </div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Add7da5f849fc20f588da8a7471b94c647d2748114a118aca9c343b0eea5b5d75&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="textblock__text">
+                    Кафедральный собор святого Архангела Михаила знавал за годы своей истории разные времена, и сейчас жители Мозыря могут только гордиться таким памятником. Ведь это не только памятник архитектуры, но и памятник веры и мужества.
+                </div>
+                <div class="textblock__text">
+                    Началась история этого величественного сооружения в 1645 году, когда часть холма – напротив Мозырского замка – была подарена монахам-бернардинцам. Этот щедрый подарок сделал Стефан Лозко, отставной полковник, который к тому же поучаствовал в строительстве небольшого деревянного монастыря. Правда, монастырь простоял всего три года, а потом был уничтожен во время казацко-крестьянской войны. Тогда же и сам Мозырь разрушили практически до основания. Только в 1678 году город начал потихоньку восстанавливаться.
+                </div>
+                <div class="textblock__text">
+                    В эти тяжелые для Мозыря времена огромную роль в возрождении города сыграл самый могущественный и знатный род на этой территории – Аскерки. Представители этой фамилии были хорошо известны на землях Мозырьского Полесья, занимали высокие должности и были владельцами огромных поместий. Именно благодаря им и был отстроен монастырь бернардинцев, а также возведен величественный каменный собор. Сколько лет ушло на его строительство – не известно, но освящен храм был примерно в 60-х или 70-х годах XVIII века.
+                </div>
+                <div class="textblock__text">
+                    Весь комплекс демонстрировал черты стиля позднего барокко. Двухбашенная трехнефная базилика стала не только домом для монахов, здесь также были начальная школа и библиотека. А в крипте собора находилась семейная усыпальница Аскерок, где находили последний приют члены этой славной семьи.
+                </div>
+                <div class="textblock__text">
+                    В XIX веке монастырь бернардинцев в Мозыре закрыли. Присоединение к Российской империи, а также национальные восстания привели к тому, что католические храмы и монастыри повсеместно прекращали свое существование. В корпусах монастыря разместили присутственные места Мозырьского уезда и больницу. Собор несколько раз горел и начал разрушаться. В 1864 году он стал православным храмом – церковью святого Архистратига Божия Михаила. В правом приделе был освящен престол во имя святителя Кирилла Туровского, а в неосвященном левом расположились ризница, библиотека и архив.
+                </div>
+                <div class="textblock__text">
+                    <span>После революции 1917 года начались самые страшные времена для собора – его превратили в тюрьму НКВД Полесской области. Существуют сведения, что в этой тюрьме были приговорены к смерти более 2 тысяч человек. Очень часто эти приговоры приводили в исполнение прямо в подвале собора.</span>
+                </div>
+                <div class="textblock__text">
+                    В годы Великой Отечественной войны церковь вновь открыли. Она была действующей все военное время. После войны ее хотели закрыть, но в 1951 году при соборе зарегистрировали небольшую православную общину. Собор является действующим храмом до сих пор.
+                </div>
+            </div>
+            <div class="welcome-screen__background ibg">
+                <div class="welcome-screen__background-color ibg__color"></div>
+                <img src="../img/mozir/textblock-background1.jpg" alt="background">
+            </div>
+        </section>
+        <section class="main__textblock textblock" id="church">
+            <div class="textblock__container textblock__container_white _container">
+                <h2 class="textblock__title">Костел Святого Михаила Архангела и бывший монастырь цистерцианок</h2>
+                <div class="textblock__content">
+                    <div class="textblock__gallery pswp-gallery" id="my-gallery">
+                        <a
+                            href="../img/mozir/gallery(church)/01.jpg"
+                            data-pswp-width="1330"
+                            data-pswp-height="887"
+                            target="_blank"
+                        >
+                            <img title="галерея(нажмите для просмотра)" src="../img/mozir/gallery(church)/01.jpg" alt=""/>
+                        </a>
+                        <a
+                            href="../img/mozir/gallery(church)/02.jpg"
+                            data-pswp-width="1000"
+                            data-pswp-height="666"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            href="../img/mozir/gallery(church)/03.jpg"
+                            data-pswp-width="700"
+                            data-pswp-height="475"
+                            target="_blank"
+                        >
+                        </a>
+                    </div>
+                    <div class="textblock__map map">
+                        <div class="map__banner">
+                            <span>нажмите, чтобы увидеть карту</span><span>нажмите, чтобы скрыть карту</span>
+                        </div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A639156ac606f470a88341037d6b77e80baa2f25aa4b68d5136b788a0b79740bd&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="textblock__text">
+                    На территории современной Беларуси цистерцианских монастырей было всего три, два из них (мужской и женский) находилось в Мозыре. Построены они были в урочище Кимбаровка. Просуществовал женский монастырь цистерцианок до 1883 года, а 5 лет спустя его здания были переданы православной конфессии.
+                    Комплекс бывшего монастыря цистерцианок (костел и хозяйственные постройки) является памятником архитектуры позднего барокко. Первый деревянный костел на его территории был сооружен в 1610 году по указу короля Жигимонта II Августа. При монастыре существовала школа для девочек, где преподавали арифметику, музыку, гигиену, французский и латинский языки. Каменный храм возведен в 1743–1745 гг.
+                </div>
+                <div class="textblock__text">
+                    <span>В 1893–1894 гг. костел реконструировали, пристроив звонницу, боковые каменные галереи. Монастырь в разное время использовался как военная казарма, детский дом. В костеле до 1990-х гг. было музыкальное училище, затем он был возвращен верующим и реставрирован.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container _container">
+            <div class="footer__copyright">Copyright ©2023 All rights reserved <span class="copyright__line">|</span><br> This site is made by <span>Shukan Ivan</span></div>
+            <div class="footer__media">
+                <a href="https://github.com/i-shukan" target="_blank">
+                    <img src="../img/footer/icons/github.svg" alt="github">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script type="module">
+        import PhotoSwipeLightbox from '../photoswipe/dist/photoswipe-lightbox.esm.js';
+        const lightbox = new PhotoSwipeLightbox({
+          gallery: '#my-gallery',
+          children: 'a',
+          showHideAnimationType: 'none',
+          wheelToZoom: true,
+          pswpModule: () => import('../photoswipe/dist/photoswipe.esm.js')
+        });
+        lightbox.init();
+    </script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
