@@ -57,12 +57,12 @@ html, body {
 }
 @media (max-width: 375px) {
   html, body {
-    font-size: 6px;
+    font-size: 8px;
   }
 }
 @media (max-width: 320px) {
   html, body {
-    font-size: 5px;
+    font-size: 8px;
   }
 }
 input, button, textarea {
@@ -130,6 +130,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Moniqa";
   src: url("../fonts/CYR_CT_OP_Emberly Regular [wdth,wght]-VF.ttf") format("truetype");
   font-style: normal;
+}
+@font-face {
+  font-family: "Golos";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/golos-text_regular.woff2") format("woff2"), url("../fonts/golos-text_regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Golos";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/golos-text_demibold.woff2") format("woff2"), url("../fonts/golos-text_demibold.woff") format("woff");
 }
 body {
   display: -ms-grid;
@@ -541,7 +553,7 @@ body.loaded {
 .menu-header {
   background: #455A64;
   padding: 1.5625rem;
-  top: -360px;
+  top: -500px;
   -webkit-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
 }
@@ -677,8 +689,8 @@ body.loaded {
 }
 
 .about-gomel__background-color {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9)));
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.95)), to(rgba(255, 255, 255, 0.95)));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95));
 }
 
 .about-gomel__infoblock {
@@ -716,7 +728,7 @@ body.loaded {
 }
 
 .infoblock__title {
-  font-size: 1.5625rem;
+  font-size: 2.25rem;
   line-height: 100%;
   margin: 0px 0px 1.875rem 0px;
   letter-spacing: 0.15em;
@@ -724,16 +736,15 @@ body.loaded {
 
 .infoblock__paragraph {
   max-width: 560px;
-  font-family: "Inter";
+  font-family: "Golos";
   font-weight: 500;
-  font-size: 0.875em;
+  font-size: 1rem;
   line-height: 150%;
   letter-spacing: 0.15em;
-  color: #757575;
+  color: rgba(0, 0, 0, 0.74);
 }
 .infoblock__paragraph span {
-  font-weight: 700;
-  color: #455A64;
+  font-weight: 600;
 }
 
 .infoblock__image {
@@ -806,9 +817,6 @@ body.loaded {
     margin: 0px 0px 12px 0px;
     font-size: 2.5rem;
   }
-  .infoblock .infoblock__paragraph {
-    font-size: 1.5em;
-  }
   .infoblock .infoblock__text {
     padding: 0px;
     -webkit-box-flex: 0;
@@ -849,6 +857,7 @@ body.loaded {
 }
 
 .map__container {
+  width: 100%;
   margin: 70px 30px;
   position: relative;
   z-index: 3;
@@ -860,7 +869,7 @@ body.loaded {
 }
 
 .map__title {
-  font-size: 1.5625rem;
+  font-size: 2.25rem;
   line-height: 100%;
   letter-spacing: 0.15em;
 }
@@ -912,18 +921,17 @@ body.loaded {
 }
 
 .map__text {
-  font-family: "Inter";
   font-weight: 500;
-  font-size: 0.875em;
+  font-size: 1rem;
   max-width: 1220px;
   line-height: 150%;
   text-align: center;
   letter-spacing: 0.15em;
-  color: #757575;
+  font-family: "Golos";
+  color: rgba(0, 0, 0, 0.74);
 }
 .map__text span {
-  font-weight: 700;
-  color: #455A64;
+  font-weight: 600;
 }
 
 .map__background-color {
@@ -942,14 +950,6 @@ body.loaded {
   }
   .map__container {
     margin: 30px;
-  }
-}
-@media (max-width: 425px) {
-  .map__title {
-    font-size: 2.5rem;
-  }
-  .map__text {
-    font-size: 1.5em;
   }
 }
 /*--------------SETTLEMENTS--------------------------------------------------------------------------------------------------------*/
@@ -971,7 +971,7 @@ body.loaded {
 }
 
 .settlements__title {
-  font-size: 1.5625rem;
+  font-size: 2.25rem;
   text-align: center;
   line-height: 100%;
   letter-spacing: 0.15em;
@@ -981,9 +981,9 @@ body.loaded {
 .settlements__body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 30vh 1.5625rem 30vh 1.5625rem 30vh;
-  -ms-grid-columns: minmax(20vh, 1fr) 1.5625rem minmax(20vh, 1fr) 1.5625rem minmax(20vh, 1fr);
-      grid-template: repeat(3, 30vh)/repeat(3, minmax(20vh, 1fr));
+  -ms-grid-rows: minmax(200px, 20vh) 1.5625rem minmax(200px, 20vh) 1.5625rem minmax(200px, 20vh);
+  -ms-grid-columns: 1fr 1.5625rem 1fr 1.5625rem 1fr;
+      grid-template: repeat(3, minmax(200px, 20vh))/repeat(3, 1fr);
   gap: 1.5625rem;
   font-size: inherit;
 }
@@ -1074,11 +1074,11 @@ body.loaded {
     -o-object-position: center;
        object-position: center;
   }
+  .item-settlements__text {
+    font-size: 0.74em;
+  }
 }
 @media (max-width: 425px) {
-  .settlements__title {
-    font-size: 2.5rem;
-  }
   .settlements__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1086,7 +1086,7 @@ body.loaded {
     font-size: 2.5rem;
   }
   .item-settlements__text {
-    font-size: 0.6em;
+    font-size: 0.5em;
   }
 }
 /*--------------FOOTER-------------------------------------------------------------------------------------------------------------*/

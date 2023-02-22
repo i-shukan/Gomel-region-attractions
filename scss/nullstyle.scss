@@ -56,12 +56,12 @@
   }
   @media (max-width: 375px) {
     html, body {
-      font-size: 6px;
+      font-size: 8px;
     }
   }
   @media (max-width: 320px) {
     html, body {
-      font-size: 5px;
+      font-size: 8px;
     }
   }
   
@@ -130,4 +130,16 @@
     font-family: 'Moniqa';
     src: url('../fonts/CYR_CT_OP_Emberly\ Regular\ [wdth\,wght]-VF.ttf') format('truetype');
     font-style: normal;
+  }
+  @font-face {
+    font-family: 'Golos';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/golos-text_regular.woff2') format('woff2'), url('../fonts/golos-text_regular.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Golos';
+    font-weight: 600;
+    font-style: normal;
+    src: url('../fonts/golos-text_demibold.woff2') format('woff2'), url('../fonts/golos-text_demibold.woff') format('woff');
   }

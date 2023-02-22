@@ -312,7 +312,7 @@ body.loaded {
 .menu-header {
     background: #455A64;
     padding: torem(25);
-    top: -360px;
+    top: -500px;
     transition: all 0.5s ease-in-out 0s;
     &.active {
         top: 100%;
@@ -425,7 +425,7 @@ body.loaded {
 .about-gomel__background {
 }
 .about-gomel__background-color {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95));
 }
 .about-gomel__infoblock {
     position: relative;
@@ -453,22 +453,21 @@ body.loaded {
     max-width: 581px;
 }
 .infoblock__title {
-    font-size: torem(25);
+    font-size: 2.25rem;
     line-height: 100%;
     margin: 0px 0px torem(30) 0px;
     letter-spacing: 0.15em;
 }
 .infoblock__paragraph {
     max-width: 560px;
-    font-family: 'Inter';
+    font-family: 'Golos';
     font-weight: 500;
-    font-size: toem(14, 16);
+    font-size: 1rem;
     line-height: 150%;
     letter-spacing: 0.15em;
-    color: #757575;
+    color: rgba(0, 0, 0, 0.74);
     span {
-        font-weight: 700;
-        color: #455A64;
+        font-weight: 600;
     }
 }
 .infoblock__image {
@@ -533,9 +532,6 @@ body.loaded {
             margin: 0px 0px 12px 0px;
             font-size: 2.5rem;
         }
-        .infoblock__paragraph {
-            font-size: 1.5em;
-        }
         .infoblock__text {
             padding: 0px;
             flex: 0 1 auto;
@@ -571,6 +567,7 @@ body.loaded {
 .map {
 }
 .map__container {
+    width: 100%;
     margin: 70px 30px;
     position: relative;
     z-index: 3;
@@ -581,7 +578,7 @@ body.loaded {
     }
 }
 .map__title {
-    font-size: torem(25);
+    font-size: 2.25rem;
     line-height: 100%;
     letter-spacing: 0.15em;
 }
@@ -623,17 +620,16 @@ body.loaded {
     }
 }
 .map__text {
-    font-family: 'Inter';
     font-weight: 500;
-    font-size: toem(14,16);
+    font-size: 1rem;
     max-width: 1220px;
     line-height: 150%;
     text-align: center;
     letter-spacing: 0.15em;
-    color: #757575;
+    font-family: 'Golos';
+    color: rgba(0, 0, 0, 0.74);
     span {
-        font-weight: 700;
-        color: #455A64;
+        font-weight: 600;
     }
 }
 .map__background {
@@ -654,14 +650,6 @@ body.loaded {
         margin: 30px;
     }
 }
-@media (max-width: 425px) {
-    .map__title {
-        font-size: 2.5rem;
-    }
-    .map__text {
-        font-size: 1.5em;
-    }
-}
 /*--------------SETTLEMENTS--------------------------------------------------------------------------------------------------------*/
 
 .settlements {
@@ -676,7 +664,7 @@ body.loaded {
     margin: 70px 30px;
 }
 .settlements__title {
-    font-size: torem(25);
+    font-size: 2.25rem;
     text-align: center;
     line-height: 100%;
     letter-spacing: 0.15em;
@@ -684,7 +672,7 @@ body.loaded {
 }
 .settlements__body {
     display: grid;
-    grid-template: repeat(3, 30vh) / repeat(3, minmax(20vh,1fr));
+    grid-template: repeat(3, minmax(200px, 20vh))/repeat(3, 1fr);
     gap: torem(25);
     font-size: inherit;
 }
@@ -764,17 +752,17 @@ body.loaded {
             object-position: center;
         }
     }
+    .item-settlements__text {
+        font-size: 0.74em;
+    }
 }
 @media (max-width: 425px) {
-    .settlements__title {
-        font-size: 2.5rem;
-    }
     .settlements__content {
         display: flex;
         font-size: 2.5rem;
     }
     .item-settlements__text {
-        font-size: 0.6em;
+        font-size: 0.5em;
     }
 }
 /*--------------FOOTER-------------------------------------------------------------------------------------------------------------*/
